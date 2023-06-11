@@ -1,0 +1,2992 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Drypto_</title>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet" />
+	<link rel="stylesheet" href="src/css/style.css" />
+	<link rel="stylesheet" href="src/css/main.css">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="is-boxed has-animations">
+	<div id="root">
+		<div class="min-h-screen max-w-screen text-gray-90 font-shopify text-base mobile:text-sm"><!--$-->
+			<header class="fixed w-full top-0 z-30 transition-colors duration-500 bg-transparent text-black"
+				role="banner">
+				<div class="h-16 container flex items-center justify-between">
+					<div class="flex items-center flex-grow"><button
+							class="text-current mr-8 cursor-pointer min-w-[20%] tablet:min-w-min" data-event-page="/"
+							data-event-category="header" data-event-action="menu_navigation" data-event-label="home"
+							data-event-href="/" aria-label="Shopify Blockchain brandmark"><svg viewBox="0 0 190 28"
+								fill="none" xmlns="http://www.w3.org/2000/svg"
+								aria-labelledby="shopifyBlockchainLogoTitle"
+								class="pointer-events-none h-[28px] w-[190px]">
+								<title id="shopifyBlockchainLogoTitle">Shopify Blockchain brandmark</title>
+								<path fill="currentColor"
+									d="m17.266 27.356 6.935-1.724-3.005-20.343a.261.261 0 0 0-.241-.223c-.1-.01-2.053-.039-2.053-.039s-1.19-1.156-1.636-1.595v23.926-.002Zm-.754-24.158-.819.254a5.717 5.717 0 0 0-.391-.966C14.72 1.376 13.87.79 12.841.787h-.005c-.072 0-.142.007-.214.014-.031-.036-.06-.072-.092-.108-.45-.48-1.027-.714-1.715-.694C9.488.038 8.164 1 7.09 2.705c-.754 1.2-1.328 2.708-1.492 3.876l-2.615.81c-.77.243-.795.266-.894.993-.074.549-2.091 16.143-2.091 16.143l16.715 2.892V3.164a.938.938 0 0 0-.203.034h.002Zm-3.86 1.197c-.884.275-1.85.574-2.818.873.273-1.044.79-2.084 1.423-2.766.236-.254.565-.536.956-.698.367.768.448 1.855.44 2.589v.002ZM10.842.886c.313-.007.574.06.8.21-.36.186-.707.454-1.031.803-.844.907-1.49 2.314-1.75 3.671l-2.315.718C7.003 4.152 8.792.947 10.843.886ZM8.26 13.056c.09 1.423 3.83 1.734 4.04 5.07.164 2.621-1.391 4.418-3.63 4.557-2.69.171-4.172-1.418-4.172-1.418l.57-2.426s1.49 1.125 2.683 1.05c.779-.049 1.058-.683 1.029-1.131-.117-1.857-3.163-1.747-3.356-4.799-.162-2.568 1.521-5.168 5.24-5.404 1.431-.09 2.165.274 2.165.274l-.851 3.183s-.948-.432-2.07-.36c-1.648.103-1.666 1.146-1.65 1.404h.002Zm5.278-8.933c-.01-.673-.09-1.61-.403-2.42 1.008.191 1.503 1.333 1.715 2.015-.39.119-.83.256-1.31.405h-.002Zm20.296 11.353c-.842-.457-1.274-.842-1.274-1.37 0-.674.601-1.106 1.538-1.106 1.091 0 2.066.457 2.066.457l.77-2.356s-.707-.554-2.79-.554c-2.896 0-4.904 1.659-4.904 3.99 0 1.322.937 2.332 2.188 3.053 1.01.576 1.37.986 1.37 1.587 0 .6-.503 1.13-1.442 1.13-1.398 0-2.717-.72-2.717-.72l-.817 2.356s1.218.817 3.268.817c2.98 0 5.121-1.465 5.121-4.11 0-1.418-1.082-2.426-2.381-3.171l.004-.003Zm11.876-4.951c-1.465 0-2.62.698-3.51 1.753l-.049-.024 1.274-6.658h-3.317L36.887 22.54h3.318l1.105-5.791c.432-2.188 1.562-3.534 2.62-3.534.745 0 1.033.504 1.033 1.226 0 .457-.05 1.011-.144 1.466l-1.25 6.633h3.318l1.299-6.85c.144-.722.24-1.586.24-2.162 0-1.875-.985-3.005-2.716-3.005v.002Zm10.214 0c-3.99 0-6.633 3.606-6.633 7.62 0 2.57 1.587 4.639 4.567 4.639 3.919 0 6.561-3.51 6.561-7.62 0-2.379-1.395-4.639-4.495-4.639Zm-1.634 9.71c-1.13 0-1.61-.96-1.61-2.162 0-1.898.987-5 2.79-5 1.177 0 1.562 1.011 1.562 1.995 0 2.043-.986 5.167-2.74 5.167h-.002Zm14.613-9.71c-2.24 0-3.51 1.972-3.51 1.972h-.046l.191-1.778h-2.933a71.302 71.302 0 0 1-.673 4.398l-2.307 12.137h3.318l.914-4.903h.072s.68.433 1.947.433c3.893 0 6.441-3.989 6.441-8.03 0-2.234-.985-4.229-3.412-4.229h-.002Zm-3.174 9.758c-.862 0-1.37-.482-1.37-.482l.553-3.102c.385-2.066 1.465-3.437 2.62-3.437 1.01 0 1.321.937 1.321 1.828 0 2.138-1.273 5.19-3.124 5.19v.003ZM77.05 5.768c-1.058 0-1.898.841-1.898 1.922 0 .986.626 1.659 1.562 1.659h.048c1.033 0 1.922-.698 1.947-1.923 0-.96-.649-1.658-1.66-1.658Zm-4.638 16.775h3.316l2.26-11.752h-3.343L72.41 22.543h.002Zm14.014-11.734h-2.308l.12-.554c.191-1.13.866-2.138 1.972-2.138.59 0 1.058.169 1.058.169l.648-2.596s-.576-.288-1.803-.288c-1.227 0-2.355.338-3.246 1.106-1.13.96-1.659 2.354-1.922 3.75l-.095.553h-1.54l-.48 2.5h1.539l-1.754 9.279h3.318l1.753-9.278h2.283l.457-2.5v-.003Zm7.978-.019s-2.073 5.224-3.005 8.076h-.047c-.063-.919-.817-8.076-.817-8.076H87.05l1.997 10.79c.047.241.025.385-.072.554-.385.745-1.033 1.465-1.803 1.994-.626.457-1.321.745-1.875.936l.914 2.812c.673-.144 2.066-.698 3.245-1.803 1.515-1.418 2.909-3.606 4.351-6.586l4.063-8.702h-3.46l-.006.005Zm8.458-5.497-2.64 13.316a9.618 9.618 0 0 0-.144 1.452c0 1.816 1.333 2.544 2.832 2.544 4.188 0 6.514-4.867 6.514-8.185 0-1.913-.799-3.923-3.125-3.923-1.404 0-2.784.75-3.848 2.47h-.048l1.526-7.676h-1.064l-.003.002Zm-1.089 10.969c.605-2.931 2.494-4.842 4.261-4.842 1.67 0 2.3 1.405 2.3 3.027 0 2.76-1.863 7.24-5.278 7.24-1.308 0-1.888-.654-1.888-1.768 0-.63.047-1.064.121-1.452l.484-2.203v-.002Zm10.097 6.102 3.246-17.07h-1.065l-3.221 17.07h1.04Zm7.419.243c3.752 0 5.715-4.648 5.715-7.628 0-2.107-.921-4.48-3.705-4.48-3.534 0-5.737 4.214-5.737 7.604 0 2.397 1.186 4.504 3.705 4.504h.024-.002Zm.122-.92c-1.817 0-2.76-1.646-2.76-3.681 0-2.978 1.841-6.586 4.551-6.586 2.132 0 2.713 2.035 2.713 3.559 0 2.784-1.842 6.707-4.48 6.707h-.024Zm13.61-.654c-.58.29-1.451.63-2.469.63-2.107 0-2.93-1.451-2.93-3.461 0-3.003 1.938-6.73 5.181-6.73a4.18 4.18 0 0 1 1.816.412l.363-.896c-.243-.194-1.09-.484-2.01-.484-3.995 0-6.44 4.236-6.44 7.822 0 2.203.993 4.26 3.802 4.26 1.404 0 2.444-.387 2.93-.63l-.243-.92v-.003Zm3.512 1.333.92-4.891 1.405-1.283 2.978 6.174h1.114l-3.293-6.852 4.841-4.77h-1.332l-4.407 4.383a21.92 21.92 0 0 0-.993 1.042h-.047l2.057-10.871h-1.042l-3.243 17.07h1.042v-.002Zm14.506-1.333c-.58.29-1.451.63-2.469.63-2.107 0-2.93-1.451-2.93-3.461 0-3.003 1.935-6.73 5.181-6.73a4.18 4.18 0 0 1 1.816.412l.363-.896c-.241-.194-1.09-.484-2.01-.484-3.995 0-6.44 4.236-6.44 7.822 0 2.203.993 4.26 3.802 4.26 1.404 0 2.444-.387 2.93-.63l-.243-.92v-.003Zm3.487 1.333 1.161-6.296c.484-2.566 2.591-4.625 4.261-4.625 1.333 0 1.889.87 1.889 1.985a9.53 9.53 0 0 1-.144 1.67l-1.38 7.264h1.042l1.355-7.192a9.124 9.124 0 0 0 .194-1.841c0-2.107-1.452-2.834-2.591-2.834-1.648 0-2.978.896-3.971 2.445h-.049l1.476-7.651h-1.04l-3.245 17.07h1.042v.005Zm18.322 0c-.05-1.236.097-3.1.508-5.278l1.236-6.246c-.605-.219-1.526-.34-2.348-.34-4.503 0-7.335 4.6-7.335 8.57 0 2.083 1.065 3.537 2.834 3.537 1.526 0 3.002-.8 4.335-3.365h.049c-.168 1.308-.315 2.422-.29 3.124h1.017l-.006-.002Zm-.291-6.514c-.556 3.003-2.687 5.834-4.576 5.834-1.573 0-2.01-1.355-1.985-2.881.025-3.655 2.638-7.385 5.981-7.385.727 0 1.139.072 1.404.169l-.824 4.26v.003Zm4.432 6.514 2.229-11.621h-1.04l-2.229 11.62h1.043-.003Zm2.229-13.899c.533 0 .871-.412.92-.945.025-.534-.265-.946-.799-.946-.459 0-.848.437-.871.946-.025.533.266.945.727.945h.025-.002Zm2.406 13.899 1.139-6.174c.508-2.81 2.712-4.745 4.26-4.745 1.43 0 1.914.871 1.914 2.082 0 .606-.072 1.162-.169 1.695l-1.355 7.142h1.04l1.332-7.142c.122-.63.219-1.211.219-1.792 0-2.203-1.452-2.93-2.591-2.93-1.598 0-3.05.92-4.067 2.615h-.05l.34-2.372h-.993a40.922 40.922 0 0 1-.508 3.414l-1.551 8.21h1.042l-.002-.003Z">
+								</path>
+							</svg></button>
+						<div class="mobile:hidden flex-grow text-center tablet:text-left "><a
+								class="paragraph-fira-semibold uppercase mr-6 animated-link animated-link__to-visible"
+								id="gid://shopify/MenuItem/450173304888" title="Features" type="HTTP" target="_self"
+								data-event-page="/" data-event-category="header" data-event-action="menu_navigation"
+								data-event-label="Features" data-event-href="/#features" aria-label="Link to Features"
+								href="/#features">Features</a><a
+								class="paragraph-fira-semibold uppercase mr-6 animated-link animated-link__to-visible"
+								id="gid://shopify/MenuItem/450124546104" title="Case Studies" type="HTTP" target="_self"
+								data-event-page="/" data-event-category="header" data-event-action="menu_navigation"
+								data-event-label="Case Studies" data-event-href="/case-studies"
+								aria-label="Link to Case Studies" href="/case-studies">Case Studies</a><a
+								class="paragraph-fira-semibold uppercase mr-6 animated-link animated-link__to-visible"
+								id="gid://shopify/MenuItem/450156855352" title="Documentation" type="HTTP"
+								target="_blank" data-event-page="/" data-event-category="header"
+								data-event-action="menu_navigation" data-event-label="Documentation"
+								data-event-href="https://shopify.dev/apps/blockchain" aria-label="Link to Documentation"
+								rel="noreferrer" href="https://shopify.dev/apps/blockchain">Documentation</a></div>
+					</div>
+					<div class="flex items-center justify-end tablet:justify-between min-w-[20%] tablet:min-w-min">
+						<a id="gid://shopify/MenuItem/450124644408" title="Discord" type="HTTP" target="_blank"
+							class="mr-4 tablet:hidden h-5 transition-color svg-height-full hover:text-gray-50"
+							data-event-page="/" data-event-category="header" data-event-action="menu_navigation"
+							data-event-label="Discord" data-event-href="https://discord.gg/shopifydevs" rel="noreferrer"
+							href="https://discord.gg/shopifydevs"><svg viewBox="0 0 26 21" fill="none"
+								xmlns="http://www.w3.org/2000/svg" aria-labelledby="discordIconTitle"
+								class="pointer-events-none">
+								<title id="discordIconTitle">Discord Icon</title>
+								<path
+									d="M21.1907 1.91865C19.5714 1.13615 17.8399 0.567467 16.0297 0.243652C15.8074 0.658771 15.5477 1.21711 15.3686 1.66127C13.4444 1.36239 11.5378 1.36239 9.64892 1.66127C9.46989 1.21711 9.20427 0.658771 8.97997 0.243652C7.16784 0.567467 5.4344 1.13824 3.81509 1.92279C0.54893 7.02035 -0.336473 11.9913 0.10623 16.8916C2.27252 18.5625 4.37192 19.5774 6.43588 20.2416C6.94549 19.5172 7.39999 18.7472 7.79153 17.9357C7.04583 17.643 6.3316 17.2819 5.65675 16.8626C5.83578 16.7256 6.01091 16.5824 6.1801 16.435C10.2962 18.4234 14.7685 18.4234 18.8355 16.435C19.0067 16.5824 19.1818 16.7256 19.3589 16.8626C18.682 17.2839 17.9658 17.6451 17.2201 17.9377C17.6117 18.7472 18.0642 19.5193 18.5758 20.2437C20.6417 19.5795 22.7431 18.5645 24.9094 16.8916C25.4288 11.2109 24.022 6.28559 21.1907 1.91865ZM8.35229 13.878C7.11667 13.878 6.10336 12.6866 6.10336 11.2358C6.10336 9.78497 7.09503 8.59154 8.35229 8.59154C9.60959 8.59154 10.6229 9.78288 10.6012 11.2358C10.6032 12.6866 9.60959 13.878 8.35229 13.878ZM16.6633 13.878C15.4277 13.878 14.4144 12.6866 14.4144 11.2358C14.4144 9.78497 15.406 8.59154 16.6633 8.59154C17.9206 8.59154 18.9339 9.78288 18.9122 11.2358C18.9122 12.6866 17.9206 13.878 16.6633 13.878Z"
+									fill="currentColor"></path>
+							</svg></a><a id="gid://shopify/MenuItem/450124677176" title="Github" type="HTTP"
+							target="_blank"
+							class="mr-4 tablet:hidden h-5 transition-color svg-height-full hover:text-gray-50"
+							data-event-page="/" data-event-category="header" data-event-action="menu_navigation"
+							data-event-label="Github" data-event-href="https://github.com/Shopify/blockchain-components"
+							rel="noreferrer" href="https://github.com/Shopify/blockchain-components"><svg
+								viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+								aria-labelledby="githubIconTitle" class="pointer-events-none">
+								<title id="githubIconTitle">Github Icon</title>
+								<path
+									d="M10.0123 0.243652C4.48912 0.243652 0.015625 4.83184 0.015625 10.4966C0.015625 15.0335 2.87716 18.8656 6.85082 20.2241C7.35065 20.3138 7.53809 20.0062 7.53809 19.7371C7.53809 19.4935 7.52559 18.6861 7.52559 17.8274C5.01394 18.3016 4.36416 17.1994 4.16423 16.6227C4.05176 16.3279 3.56443 15.418 3.13957 15.1745C2.78969 14.9823 2.28986 14.5081 3.12708 14.4952C3.91431 14.4824 4.47662 15.2386 4.66406 15.5462C5.56375 17.0969 7.00077 16.6612 7.57557 16.392C7.66304 15.7256 7.92546 15.277 8.21286 15.0207C5.98861 14.7644 3.66439 13.8801 3.66439 9.95831C3.66439 8.8433 4.05176 7.92054 4.68905 7.20283C4.58908 6.94651 4.2392 5.89558 4.78901 4.48581C4.78901 4.48581 5.62623 4.21667 7.53809 5.53673C8.33782 5.30604 9.18753 5.19069 10.0372 5.19069C10.887 5.19069 11.7367 5.30604 12.5364 5.53673C14.4483 4.20385 15.2855 4.48581 15.2855 4.48581C15.8353 5.89558 15.4854 6.94651 15.3854 7.20283C16.0227 7.92054 16.4101 8.83049 16.4101 9.95831C16.4101 13.8929 14.0734 14.7644 11.8491 15.0207C12.2115 15.3411 12.5239 15.9563 12.5239 16.9175C12.5239 18.2888 12.5114 19.391 12.5114 19.7371C12.5114 20.0062 12.6988 20.3266 13.1987 20.2241C15.1832 19.5369 16.9076 18.2288 18.1293 16.4838C19.351 14.7388 20.0083 12.6448 20.0089 10.4966C20.0089 4.83184 15.5354 0.243652 10.0123 0.243652Z"
+									fill="currentColor"></path>
+							</svg></a><a id="gid://shopify/MenuItem/450124709944" title="Twitter" type="HTTP"
+							target="_blank"
+							class="mr-0 tablet:hidden h-5 transition-color svg-height-full hover:text-gray-50"
+							data-event-page="/" data-event-category="header" data-event-action="menu_navigation"
+							data-event-label="Twitter" data-event-href="https://twitter.com/shopifydevs"
+							rel="noreferrer" href="https://twitter.com/shopifydevs"><svg role="img" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg" aria-labelledby="twitterIconTitle"
+								class="pointer-events-none">
+								<title id="twitterIconTitle">Twitter Icon</title>
+								<path fill="currentColor"
+									d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+								</path>
+							</svg></a>
+						<div class="hidden mobile:block"><button aria-label="Toggle Navigation" class="">
+								<div class="hamburger"><span
+										class="w-5 border-b-2 mb-1 block transform origin-center transition-transform duration-200 border-current rotate-0"></span><span
+										class="w-5 border-b-2 mb-1 block transition-opacity duration-200 border-current opacity-100"></span><span
+										class="w-5 border-b-2 block transform origin-center transition-transform duration-200 border-current rotate-0"></span>
+								</div>
+							</button></div>
+					</div>
+				</div>
+				<div
+					class="hidden tablet:block fixed top-[64px] w-full right-0 bottom-0 bg-black text-white max-w-[320px] border-t border-[#3D3F40] transition-transform transform duration-500 translate-x-full">
+					<div class="flex flex-col justify-between h-full px-6 py-8">
+						<div class="flex flex-col items-start gap-10"><a class="paragraph-fira-semibold uppercase"
+								id="gid://shopify/MenuItem/450173304888" title="Features" type="HTTP" target="_self"
+								data-event-page="/" data-event-category="header" data-event-action="menu_navigation"
+								data-event-label="Features" data-event-href="/#features" aria-label="Link to Features"
+								href="/#features">Features</a><a class="paragraph-fira-semibold uppercase"
+								id="gid://shopify/MenuItem/450124546104" title="Case Studies" type="HTTP" target="_self"
+								data-event-page="/" data-event-category="header" data-event-action="menu_navigation"
+								data-event-label="Case Studies" data-event-href="/case-studies"
+								aria-label="Link to Case Studies" href="/case-studies">Case Studies</a><a
+								class="paragraph-fira-semibold uppercase" id="gid://shopify/MenuItem/450156855352"
+								title="Documentation" type="HTTP" target="_blank" data-event-page="/"
+								data-event-category="header" data-event-action="menu_navigation"
+								data-event-label="Documentation" data-event-href="https://shopify.dev/apps/blockchain"
+								aria-label="Link to Documentation" rel="noreferrer"
+								href="https://shopify.dev/apps/blockchain">Documentation</a></div>
+						<div class="flex flex-row"><a id="gid://shopify/MenuItem/450124644408" title="Discord"
+								type="HTTP" target="_blank" class="h-5 mr-4 svg-height-full" data-event-page="/"
+								data-event-category="header" data-event-action="menu_navigation"
+								data-event-label="Discord" data-event-href="https://discord.gg/shopifydevs"
+								rel="noreferrer" href="https://discord.gg/shopifydevs"><svg viewBox="0 0 26 21"
+									fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="discordIconTitle"
+									class="pointer-events-none">
+									<title id="discordIconTitle">Discord Icon</title>
+									<path
+										d="M21.1907 1.91865C19.5714 1.13615 17.8399 0.567467 16.0297 0.243652C15.8074 0.658771 15.5477 1.21711 15.3686 1.66127C13.4444 1.36239 11.5378 1.36239 9.64892 1.66127C9.46989 1.21711 9.20427 0.658771 8.97997 0.243652C7.16784 0.567467 5.4344 1.13824 3.81509 1.92279C0.54893 7.02035 -0.336473 11.9913 0.10623 16.8916C2.27252 18.5625 4.37192 19.5774 6.43588 20.2416C6.94549 19.5172 7.39999 18.7472 7.79153 17.9357C7.04583 17.643 6.3316 17.2819 5.65675 16.8626C5.83578 16.7256 6.01091 16.5824 6.1801 16.435C10.2962 18.4234 14.7685 18.4234 18.8355 16.435C19.0067 16.5824 19.1818 16.7256 19.3589 16.8626C18.682 17.2839 17.9658 17.6451 17.2201 17.9377C17.6117 18.7472 18.0642 19.5193 18.5758 20.2437C20.6417 19.5795 22.7431 18.5645 24.9094 16.8916C25.4288 11.2109 24.022 6.28559 21.1907 1.91865ZM8.35229 13.878C7.11667 13.878 6.10336 12.6866 6.10336 11.2358C6.10336 9.78497 7.09503 8.59154 8.35229 8.59154C9.60959 8.59154 10.6229 9.78288 10.6012 11.2358C10.6032 12.6866 9.60959 13.878 8.35229 13.878ZM16.6633 13.878C15.4277 13.878 14.4144 12.6866 14.4144 11.2358C14.4144 9.78497 15.406 8.59154 16.6633 8.59154C17.9206 8.59154 18.9339 9.78288 18.9122 11.2358C18.9122 12.6866 17.9206 13.878 16.6633 13.878Z"
+										fill="currentColor"></path>
+								</svg></a><a id="gid://shopify/MenuItem/450124677176" title="Github" type="HTTP"
+								target="_blank" class="h-5 mr-4 svg-height-full" data-event-page="/"
+								data-event-category="header" data-event-action="menu_navigation"
+								data-event-label="Github"
+								data-event-href="https://github.com/Shopify/blockchain-components" rel="noreferrer"
+								href="https://github.com/Shopify/blockchain-components"><svg viewBox="0 0 21 21"
+									fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="githubIconTitle"
+									class="pointer-events-none">
+									<title id="githubIconTitle">Github Icon</title>
+									<path
+										d="M10.0123 0.243652C4.48912 0.243652 0.015625 4.83184 0.015625 10.4966C0.015625 15.0335 2.87716 18.8656 6.85082 20.2241C7.35065 20.3138 7.53809 20.0062 7.53809 19.7371C7.53809 19.4935 7.52559 18.6861 7.52559 17.8274C5.01394 18.3016 4.36416 17.1994 4.16423 16.6227C4.05176 16.3279 3.56443 15.418 3.13957 15.1745C2.78969 14.9823 2.28986 14.5081 3.12708 14.4952C3.91431 14.4824 4.47662 15.2386 4.66406 15.5462C5.56375 17.0969 7.00077 16.6612 7.57557 16.392C7.66304 15.7256 7.92546 15.277 8.21286 15.0207C5.98861 14.7644 3.66439 13.8801 3.66439 9.95831C3.66439 8.8433 4.05176 7.92054 4.68905 7.20283C4.58908 6.94651 4.2392 5.89558 4.78901 4.48581C4.78901 4.48581 5.62623 4.21667 7.53809 5.53673C8.33782 5.30604 9.18753 5.19069 10.0372 5.19069C10.887 5.19069 11.7367 5.30604 12.5364 5.53673C14.4483 4.20385 15.2855 4.48581 15.2855 4.48581C15.8353 5.89558 15.4854 6.94651 15.3854 7.20283C16.0227 7.92054 16.4101 8.83049 16.4101 9.95831C16.4101 13.8929 14.0734 14.7644 11.8491 15.0207C12.2115 15.3411 12.5239 15.9563 12.5239 16.9175C12.5239 18.2888 12.5114 19.391 12.5114 19.7371C12.5114 20.0062 12.6988 20.3266 13.1987 20.2241C15.1832 19.5369 16.9076 18.2288 18.1293 16.4838C19.351 14.7388 20.0083 12.6448 20.0089 10.4966C20.0089 4.83184 15.5354 0.243652 10.0123 0.243652Z"
+										fill="currentColor"></path>
+								</svg></a><a id="gid://shopify/MenuItem/450124709944" title="Twitter" type="HTTP"
+								target="_blank" class="h-5 mr-4 svg-height-full" data-event-page="/"
+								data-event-category="header" data-event-action="menu_navigation"
+								data-event-label="Twitter" data-event-href="https://twitter.com/shopifydevs"
+								rel="noreferrer" href="https://twitter.com/shopifydevs"><svg role="img"
+									viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+									aria-labelledby="twitterIconTitle" class="pointer-events-none">
+									<title id="twitterIconTitle">Twitter Icon</title>
+									<path fill="currentColor"
+										d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+									</path>
+								</svg></a></div>
+					</div>
+				</div>
+			</header>
+			<main role="main" id="mainContent" class="relative z-10 overflow-hidden">
+				<div class="bg-gray-950">
+					<div class="relative overflow-hidden">
+						<div class="absolute top-0 left-0 w-full h-full">
+							<div
+								class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#FF845C] to-[#FFA8DC]">
+							</div>
+							<div
+								class="absolute top-[-10%] tablet:top-[-15%] left-0 w-[65%] tablet:w-[150%] svg-width-full blur-[40px] desktop:blur-[30px] transform-gpu">
+								<svg width="1220" height="1197" viewBox="0 0 1220 1197" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path id="red-blob-path-1"
+										d="M674.27 208.94 C359.96 248.87 192.49 -90.5 58.99 22.99 -74.5 136.49 312.25 342.53 196.06 426.82 99.56 496.82 -49 645.99 14.99 912.49 101.73 1273.65 562.39 1225.96 898.89 1121.46 1235.39 1016.96 1282.8 816.48 1099.8 810.98 916.81 805.48 560.1 872.24 481.6 712.74 359.79 465.24 982.89 448.98 1014.89 309.98 1046.89 170.98 890.77 181.44 674.27 208.94 "
+										fill="#FF868D"
+										data-original="M688.001 216C373.695 255.925 192.503 -90.4998 59.0012 23.0006C-74.5002 136.501 320.693 348.215 204.501 432.499C108.001 502.499 -49 645.999 15.0012 912.499C101.736 1273.66 568 1225.5 904.5 1121C1241 1016.5 1300.12 810.482 1117.12 804.982C934.124 799.482 545.001 878.499 466.501 718.999C344.691 471.499 1005.5 443.999 1037.5 304.999C1069.5 165.999 904.5 188.499 688.001 216Z">
+									</path>
+									<path id="red-blob-path-2" class="invisible"
+										d="M379.5 57.5C65.1935 97.4251 192.403 -90.5479 58.9016 22.9525C-74.5998 136.453 131.094 220.667 14.9017 304.951C-81.5983 374.951 -49.0996 645.951 14.9016 912.451C101.637 1273.62 442 1236 778.5 1131.5C1115 1027 911 945.5 728 940C545 934.5 884.5 738 806 578.5C684.19 331 497.5 556 529.5 417C561.5 278 595.999 29.999 379.5 57.5Z">
+									</path>
+									<path id="red-blob-path-3" class="invisible"
+										d="M379.5 57.5C65.1935 97.4251 513.001 248.5 379.5 362C245.999 475.5 131.094 220.667 14.9017 304.951C-81.5983 374.951 -49.0996 645.951 14.9016 912.451C101.637 1273.62 -182.5 1565 154 1460.5C490.5 1356 723 945 540 939.5C357 934 378 965.5 299.5 806C177.69 558.5 497.5 556 529.5 417C561.5 278 595.999 29.999 379.5 57.5Z">
+									</path>
+								</svg>
+							</div>
+							<div
+								class="absolute top-0 right-[5vw] tablet:right-0 w-[75%] tablet:w-[150%] svg-width-full blur-[60px] transform-gpu">
+								<svg width="1178" height="1469" viewBox="0 0 1178 1469" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path id="green-blob-path-1"
+										d="M430.81 347.84 C508.8 251.02 330.36 14.8 513.01 4.28 695.66 -6.24 1134.24 403.52 1166.74 954.85 1199.23 1506.17 1021.25 1567.88 929.26 1354.17 837.27 1140.46 895.23 1040.05 667.75 862.96 440.28 685.87 92.99 835.37 23.5 664.81 -45.98 494.24 352.82 444.66 430.81 347.84 "
+										fill="url(#paint0_radial_177_52)"
+										data-original="M438.156 347.845C516.149 251.025 315 10.7246 497.651 0.196441C680.302 -10.3317 1141.59 403.529 1174.09 954.851C1206.58 1506.17 1028.6 1567.88 936.61 1354.17C844.619 1140.46 913.612 1033.11 686.133 856.024C458.655 678.939 77.1891 837.463 7.69558 666.899C-61.798 496.336 360.164 444.665 438.156 347.845Z">
+									</path>
+									<path id="green-blob-path-2"
+										d="M273.156 347.846C351.149 251.026 660.349 102.528 843 92C1025.65 81.4718 976.591 403.53 1009.09 954.851C1041.58 1506.17 863.601 1567.88 771.61 1354.17C679.618 1140.46 500.635 1189.09 273.156 1012C45.6771 834.915 432.494 790.564 363 620.001C293.506 449.437 195.163 444.666 273.156 347.846Z"
+										class="invisible"></path>
+									<path id="green-blob-path-3" class="invisible"
+										d="M273.156 209.846C351.149 113.026 588.959 762.528 771.61 752C954.26 741.472 1442.5 400.678 1475 952C1507.5 1503.32 863.601 1429.88 771.61 1216.17C679.618 1002.46 500.635 1051.09 273.156 874.001C45.6771 696.916 432.494 652.564 363 482.001C293.506 311.437 195.163 306.666 273.156 209.846Z">
+									</path>
+									<defs>
+										<radialGradient id="paint0_radial_177_52" cx="0" cy="0" r="1"
+											gradientUnits="userSpaceOnUse"
+											gradientTransform="translate(589 734.112) rotate(90) scale(734.112 589)">
+											<stop stop-color="#5BCFE2"></stop>
+											<stop offset="0.931121" stop-color="#F5E27E" stop-opacity="0.5">
+											</stop>
+										</radialGradient>
+									</defs>
+								</svg>
+							</div>
+							<div
+								class="absolute top-0 tablet:top-[5%] right-0 w-[40%] tablet:w-[60%] svg-width-full blur-[40px] transform-gpu">
+								<svg width="670" height="664" viewBox="0 0 670 664" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path id="blue-blob-path-1"
+										d="M162.21 439.45 C133.15 237.27 -65.86 141.51 49.14 56 166.28 -16.99 306.54 4.22 396.41 46.4 557.73 122.11 816.6 345.79 599.66 579.9 420.06 773.72 186.99 611.95 162.21 439.45 "
+										fill="#8DADFF"
+										data-original="M162.647 425.681C133.346 223.499 -80.9991 129.694 35.001 44.181C153.147 -28.8182 290 2.00058 380.646 44.1811C543.354 119.894 804.452 343.567 585.646 577.681C404.501 771.499 187.646 598.181 162.647 425.681Z">
+									</path>
+									<path id="blue-blob-path-2"
+										d="M152.827 735.24C129.156 533.058 259.238 395.459 352.951 309.947C448.397 236.947 661.901 51.9989 735.131 94.1794C866.577 169.893 1077.51 393.566 900.743 627.68C754.402 821.498 173.023 907.74 152.827 735.24Z"
+										class="invisible"></path>
+									<path id="blue-blob-path-3" class="invisible"
+										d="M151.001 402C127.33 199.818 593.289 179.692 687.002 94.1794C782.448 21.1802 1132.9 51.999 1206.13 94.1795C1337.58 169.893 1543.77 591.886 1367 826C1220.66 1019.82 171.197 574.5 151.001 402Z">
+									</path>
+								</svg>
+							</div>
+							<div class="noise undefined"></div>
+						</div>
+						<div class="relative h-full pt-36 mobile:pt-28">
+							<div class="container relative">
+								<div class="relative text-black pb-[150px] mobile:pb-[60px] hero__content">
+									<div class="hero__content-block invisible"
+										style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+										<h1
+											class="dsp max-w-4xl mb-6 opacity-0 absolute mobile:opacity-100 mobile:static">
+											Build for<br>blockchain</h1>
+										<div class="h1-dsp max-w-4xl mb-6 mobile:opacity-0 mobile:absolute"
+											aria-hidden="true">Build for<!-- -->
+											<div class="relative">
+												<div class="inline-block">blockclsre</div>
+											</div> <!-- -->commerce
+										</div>
+									</div>
+									<p class="paragraph-major max-w-lg mb-11 hero__content-block invisible"
+										style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+										Discover robust APIs and components to develop advanced token-powered
+										experiences. Drive loyalty, foster brand collaborations, and empower
+										communities.</p>
+									<div class="flex flex-wrap items-center hero__content-block invisible"
+										style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+										<a href="https://shopify.dev/apps/blockchain" target="_blank" rel="noreferrer"
+											class="btn btn--primary mr-8 mobile:mr-0 mobile:mb-6"
+											id="hero-documentation" aria-label="Link to developer documentation"
+											data-event-category="hero" data-event-action="button_click"
+											data-event-label="read-documentation"
+											data-event-href="https://shopify.dev/apps/blockchain">Read
+											documentation<div class="w-2.5 ml-3 svg-width-full"><svg viewBox="0 0 11 16"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M6.58325 -0.000976562C6.89582 -0.000976562 7.1956 0.125451 7.41662 0.350495L10.6548 3.64755C10.8758 3.8726 11 4.17782 11 4.49608V14.799C11 15.4618 10.4723 15.999 9.82143 15.999H1.17857C0.527665 15.999 0 15.4618 0 14.799V1.19902C0 0.536282 0.527664 -0.000976562 1.17857 -0.000976562H6.58325ZM2.35714 3.99902H5.5V5.59902H2.35714V3.99902ZM8.64286 7.19902V8.79902H2.35714V7.19902H8.64286ZM2.35714 11.999V10.399H7.85714V11.999H2.35714Z"
+														fill="currentColor"></path>
+												</svg></div></a>
+										<p class="paragraph-fira-semibold mobile:w-full"><a
+												class="group relative undefined" tabindex="0" id="hero-features"
+												aria-label="Link to blockchain Features" data-event-category="hero"
+												data-event-action="link_click" data-event-label="dive-into-features"
+												data-event-href="#features" href="/#features"><span
+													class="relative mr-3 pointer-events-none"><span>Dive
+													</span><span>into </span><span
+														class="whitespace-nowrap"><span>features</span><span
+															class="w-[calc(100%_-_2rem)] h-[1px] absolute left-0 bottom-0 scale-x-100 group-hover:scale-x-0 origin-left group-hover:origin-right transition-transform duration-500 bg-black"></span><span
+															class="pointer-events-none" aria-hidden="true">
+															--&gt;</span></span></span></a></p>
+									</div>
+								</div>
+								<div
+									class="absolute mobile:relative w-[0px] tablet:w-[380px] mobile:w-[260px] tablet:mx-auto h-5/6 mobile:h-[350px] mobile:mb-10 top-8 tablet:top-0 right-[5vw] tablet:right-0">
+									<div class="hero-figure anime-element">
+										<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+											<rect width="528" height="396" style="fill:transparent;" />
+										</svg>
+										<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg">
+										</div>
+										<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg">
+										</div>
+										<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg">
+										</div>
+										<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg">
+										</div>
+										<div class="hero-figure-box hero-figure-box-05"></div>
+										<div class="hero-figure-box hero-figure-box-06"></div>
+										<div class="hero-figure-box hero-figure-box-07"></div>
+										<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg">
+										</div>
+										<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg">
+										</div>
+										<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="relative pb-4">
+								<div
+									class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black via-black to-transparent">
+								</div>
+								<div class="relative container">
+									<div class="grid grid-cols-12 gap-4">
+										<div class="col-span-4 tablet:col-span-12 hero__content-block invisible"
+											style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+											<div class="h-full flex flex-col tablet:flex-row mobile:flex-col"
+												style="will-change: transform; transform: perspective(3000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+												<div
+													class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
+													<video
+														src="https://cdn.shopify.com/videos/c/o/v/3ec729df265b48cf8bc2e6f6d68236f2.mp4"
+														poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/card-1.png?v=1675285925"
+														muted="" playsinline=""
+														class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]"></video>
+												</div>
+												<div
+													class="bg-pistachio p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6">
+													<h2 class="h4 mb-3">Segment buyers with NFT collections</h2>
+													<p class="paragraph-minor">Distribute NFTs to different
+														buyer segments that you can target with different perks
+														– on and off Shopify, online and in real life.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-span-4 tablet:col-span-12 hero__content-block invisible"
+											style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+											<div class="h-full flex flex-col tablet:flex-row mobile:flex-col"
+												style="will-change: transform; transform: perspective(3000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+												<div
+													class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
+													<video
+														src="https://cdn.shopify.com/videos/c/o/v/bf060f6ded4544b7a0ee57f897577a78.mp4"
+														poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/card-2.png?v=1675285925"
+														muted="" playsinline=""
+														class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]"></video>
+												</div>
+												<div
+													class="bg-pistachio p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6">
+													<h2 class="h4 mb-3">Supercharge loyalty with tokengating
+													</h2>
+													<p class="paragraph-minor">Fortify relationships between
+														brands and buyers. Create gated experiences to reward
+														token holders with exclusive products, perks, and
+														memberships.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-span-4 tablet:col-span-12 hero__content-block invisible"
+											style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+											<div class="h-full flex flex-col tablet:flex-row mobile:flex-col"
+												style="will-change: transform; transform: perspective(3000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+												<div
+													class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
+													<video
+														src="https://cdn.shopify.com/videos/c/o/v/7a382b18ca1146a9a8b3ecab2f42dbc8.mp4"
+														poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/card-3.png?v=1675285925"
+														muted="" playsinline=""
+														class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]"></video>
+												</div>
+												<div
+													class="bg-pistachio p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6">
+													<h2 class="h4 mb-3">Collab like never before</h2>
+													<p class="paragraph-minor">Empower brands to collaborate on
+														a big release or drop. Build tools that let them gate to
+														each others’ fanbases and forge new communities.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<section class="py-28 laptop:py-[80px] bg-black text-white tablet:pb-12" id="features">
+						<div class="container">
+							<h2 aria-label="Take your commerce stack onchain" class="max-w-[15ch] mb-16">
+								<div class="leading-none overflow-hidden"
+									style="display: block; text-align: start; position: relative;">
+									<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+										class="leading-none overflow-hidden">Take</div>
+									<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+										class="leading-none overflow-hidden">your</div>
+									<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+										class="leading-none overflow-hidden">commerce</div>
+								</div>
+								<div class="leading-none overflow-hidden"
+									style="display: block; text-align: start; position: relative;">
+									<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+										class="leading-none overflow-hidden">stack</div>
+									<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+										class="leading-none overflow-hidden">onchain</div>
+								</div>
+							</h2>
+							<div class="w-full">
+								<div class="relative">
+									<div class="keen-slider rounded-lg" tabindex="0">
+										<div class="keen-slider__slide rounded-lg min-w-full max-w-full"
+											style="transform: translate3d(0px, 0px, 0px);">
+											<div class="rounded-lg mobile:hidden"><img
+													class="block w-full rounded-lg mobile:hidden opacity-50"
+													aria-hidden="true"
+													src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/illustration-blockchain-components.png?v=1675285927"
+													width="1260px" height="540px"
+													alt="Animation of Shopify Blockchain components and sample code in a developer’s terminal"
+													loading="lazy" decoding="async">
+												<div class="rounded-lg absolute w-full top-0 bottom-0 left-0 right-0">
+													<video
+														title="Animation of Shopify Blockchain components and sample code in a developer’s terminal"
+														src=""
+														poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/illustration-blockchain-components.png?v=1675285927"
+														muted="" playsinline=""
+														class="rounded-lg absolute w-full top-0 bottom-0 left-0 right-0"></video><button
+														class="absolute right-[30px] tablet:right-auto tablet:left-[20px] bottom-[30px] tablet:bottom-[20px] w-[44px] h-[44px] svg-width-full cursor-pointer text-black hover:text-lavender transition-colors"
+														aria-pressed="false"><svg viewBox="0 0 44 44" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle cx="22" cy="22" r="22" fill="currentColor">
+															</circle>
+															<path class="inline" fill-rule="evenodd" clip-rule="evenodd"
+																d="M29 22.0002C29 22.3522 28.816 22.6772 28.515 22.8572L18.515 28.857C18.356 28.952 18.178 29 18 29C17.83 29 17.66 28.957 17.507 28.87C17.194 28.692 17 28.36 17 28V16.0004C17 15.6404 17.194 15.3085 17.507 15.1305C17.82 14.9515 18.206 14.9575 18.515 15.1435L28.515 21.1433C28.816 21.3233 29 21.6482 29 22.0002Z"
+																fill="white"></path>
+															<g class="hidden">
+																<path d="M18 16V28" stroke="white" stroke-width="2"
+																	stroke-linecap="round">
+																</path>
+																<path d="M26 16V28" stroke="white" stroke-width="2"
+																	stroke-linecap="round">
+																</path>
+															</g>
+														</svg></button>
+												</div>
+											</div>
+											<div class="rounded-lg hidden mobile:block"><img
+													class="w-full rounded-lg hidden mobile:block opacity-50"
+													aria-hidden="true"
+													src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/XS-app-tool-illustration1.png?v=1675286784"
+													width="1260px" height="540px"
+													alt="Animation of Shopify Blockchain components and sample code in a developer’s terminal"
+													loading="lazy" decoding="async">
+												<div class="rounded-lg absolute w-full top-0 bottom-0 left-0 right-0">
+													<video
+														title="Animation of Shopify Blockchain components and sample code in a developer’s terminal"
+														src=""
+														poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/XS-app-tool-illustration1.png?v=1675286784"
+														muted="" playsinline=""
+														class="rounded-lg w-full absolute top-0 bottom-[-1px] left-0 right-0"></video><button
+														class="absolute right-[30px] tablet:right-auto tablet:left-[20px] bottom-[30px] tablet:bottom-[20px] w-[44px] h-[44px] svg-width-full cursor-pointer text-black hover:text-lavender transition-colors"
+														aria-pressed="false"><svg viewBox="0 0 44 44" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle cx="22" cy="22" r="22" fill="currentColor">
+															</circle>
+															<path class="inline" fill-rule="evenodd" clip-rule="evenodd"
+																d="M29 22.0002C29 22.3522 28.816 22.6772 28.515 22.8572L18.515 28.857C18.356 28.952 18.178 29 18 29C17.83 29 17.66 28.957 17.507 28.87C17.194 28.692 17 28.36 17 28V16.0004C17 15.6404 17.194 15.3085 17.507 15.1305C17.82 14.9515 18.206 14.9575 18.515 15.1435L28.515 21.1433C28.816 21.3233 29 21.6482 29 22.0002Z"
+																fill="white"></path>
+															<g class="hidden">
+																<path d="M18 16V28" stroke="white" stroke-width="2"
+																	stroke-linecap="round">
+																</path>
+																<path d="M26 16V28" stroke="white" stroke-width="2"
+																	stroke-linecap="round">
+																</path>
+															</g>
+														</svg></button>
+												</div>
+											</div>
+										</div>
+										<div class="keen-slider__slide rounded-lg min-w-full max-w-full"
+											style="transform: translate3d(0px, 0px, 0px);">
+											<div class="rounded-lg mobile:hidden"><img
+													class="block w-full rounded-lg mobile:hidden opacity-50"
+													aria-hidden="true"
+													src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/illustration-gates-api.png?v=1675285927"
+													width="1260px" height="540px"
+													alt="Animation of sample code for creating a gating configuration in a developer’s terminal"
+													loading="lazy" decoding="async">
+												<div class="rounded-lg absolute w-full top-0 bottom-0 left-0 right-0">
+													<video
+														title="Animation of sample code for creating a gating configuration in a developer’s terminal"
+														src=""
+														poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/illustration-gates-api.png?v=1675285927"
+														muted="" playsinline=""
+														class="rounded-lg absolute w-full top-0 bottom-0 left-0 right-0"></video><button
+														class="absolute right-[30px] tablet:right-auto tablet:left-[20px] bottom-[30px] tablet:bottom-[20px] w-[44px] h-[44px] svg-width-full cursor-pointer text-black hover:text-lavender transition-colors"
+														aria-pressed="false"><svg viewBox="0 0 44 44" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle cx="22" cy="22" r="22" fill="currentColor">
+															</circle>
+															<path class="inline" fill-rule="evenodd" clip-rule="evenodd"
+																d="M29 22.0002C29 22.3522 28.816 22.6772 28.515 22.8572L18.515 28.857C18.356 28.952 18.178 29 18 29C17.83 29 17.66 28.957 17.507 28.87C17.194 28.692 17 28.36 17 28V16.0004C17 15.6404 17.194 15.3085 17.507 15.1305C17.82 14.9515 18.206 14.9575 18.515 15.1435L28.515 21.1433C28.816 21.3233 29 21.6482 29 22.0002Z"
+																fill="white"></path>
+															<g class="hidden">
+																<path d="M18 16V28" stroke="white" stroke-width="2"
+																	stroke-linecap="round">
+																</path>
+																<path d="M26 16V28" stroke="white" stroke-width="2"
+																	stroke-linecap="round">
+																</path>
+															</g>
+														</svg></button>
+												</div>
+											</div>
+											<div class="rounded-lg hidden mobile:block"><img
+													class="w-full rounded-lg hidden mobile:block opacity-50"
+													aria-hidden="true"
+													src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/XS-app-tool-illustration2.png?v=1675286784"
+													width="1260px" height="540px"
+													alt="Animation of sample code for creating a gating configuration in a developer’s terminal"
+													loading="lazy" decoding="async">
+												<div class="rounded-lg absolute w-full top-0 bottom-0 left-0 right-0">
+													<video
+														title="Animation of sample code for creating a gating configuration in a developer’s terminal"
+														src=""
+														poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/XS-app-tool-illustration2.png?v=1675286784"
+														muted="" playsinline=""
+														class="rounded-lg w-full absolute top-0 bottom-[-1px] left-0 right-0"></video><button
+														class="absolute right-[30px] tablet:right-auto tablet:left-[20px] bottom-[30px] tablet:bottom-[20px] w-[44px] h-[44px] svg-width-full cursor-pointer text-black hover:text-lavender transition-colors"
+														aria-pressed="false"><svg viewBox="0 0 44 44" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle cx="22" cy="22" r="22" fill="currentColor">
+															</circle>
+															<path class="inline" fill-rule="evenodd" clip-rule="evenodd"
+																d="M29 22.0002C29 22.3522 28.816 22.6772 28.515 22.8572L18.515 28.857C18.356 28.952 18.178 29 18 29C17.83 29 17.66 28.957 17.507 28.87C17.194 28.692 17 28.36 17 28V16.0004C17 15.6404 17.194 15.3085 17.507 15.1305C17.82 14.9515 18.206 14.9575 18.515 15.1435L28.515 21.1433C28.816 21.3233 29 21.6482 29 22.0002Z"
+																fill="white"></path>
+															<g class="hidden">
+																<path d="M18 16V28" stroke="white" stroke-width="2"
+																	stroke-linecap="round">
+																</path>
+																<path d="M26 16V28" stroke="white" stroke-width="2"
+																	stroke-linecap="round">
+																</path>
+															</g>
+														</svg></button>
+												</div>
+											</div>
+										</div>
+										<div class="keen-slider__slide rounded-lg min-w-full max-w-full"
+											style="transform: translate3d(0px, 0px, 0px);"><img
+												class="block w-full rounded-lg mobile:hidden" aria-hidden="true"
+												src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/shopify-payments_805f53f7-21cf-43d4-8fe9-4c3c00ed99e1.png?v=1684752233"
+												width="1260px" height="540px"
+												alt="Image of an NFT for sale, purchasable via Shop Pay" loading="lazy"
+												decoding="async"><img class="w-full rounded-lg hidden mobile:block"
+												aria-hidden="true"
+												src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/shopify-payments-mobile_ebfdceb9-9675-4200-baee-1699c56bcf6e.png?v=1684752234"
+												width="1260px" height="540px"
+												alt="Image of an NFT for sale, purchasable via Shop Pay" loading="lazy"
+												decoding="async"></div>
+									</div>
+								</div>
+								<div class="flex gap-4 tablet:gap-3"><button class="w-1/3 mobile:w-16 pt-10 pb-6">
+										<div class="relative w-full h-1 bg-gray-70">
+											<div
+												class="h-full bg-seafoam absolute ease-linear transition-none duration-[0s] w-0">
+												<span class="sr-only">React components</span>
+											</div>
+										</div>
+									</button><button class="w-1/3 mobile:w-16 pt-10 pb-6">
+										<div class="relative w-full h-1 bg-gray-70">
+											<div
+												class="h-full bg-seafoam absolute ease-linear transition-none duration-[0s] w-0">
+												<span class="sr-only">Gates API</span>
+											</div>
+										</div>
+									</button><button class="w-1/3 mobile:w-16 pt-10 pb-6">
+										<div class="relative w-full h-1 bg-gray-70">
+											<div
+												class="h-full bg-seafoam absolute ease-linear transition-none duration-[0s] w-0">
+												<span class="sr-only">Shopify Payments</span>
+											</div>
+										</div>
+									</button></div>
+								<div class="keen-slider mb-10"><button class="keen-slider__slide cursor-pointer"
+										style="min-width: 311.556px; max-width: 311.556px; transform: translate3d(0px, 0px, 0px);">
+										<div
+											class="w-full transition-colors duration-1000 text-left paragraph-dark-background ">
+											<h3 class="h4 mb-4">React components</h3>
+											<div><a href="https://shopify.dev/api/blockchain" target="_blank"
+													rel="noopener noreferrer">Build faster</a> with React
+												components optimized for Shopify’s platform, like Connect Wallet
+												and Tokengate. Customize to fit your needs and integrate across
+												channels.</div>
+										</div>
+									</button><button class="keen-slider__slide cursor-pointer"
+										style="min-width: 311.556px; max-width: 311.556px; transform: translate3d(24px, 0px, 0px);">
+										<div
+											class="w-full transition-colors duration-1000 text-left paragraph-dark-background ">
+											<h3 class="h4 mb-4">Gates API</h3>
+											<div><a href="https://shopify.dev/api/admin-graphql/unstable/queries/gateConfiguration"
+													target="_blank" rel="noopener noreferrer">Create tokengating
+													experiences</a> for your stores and enforce at checkout.
+												Decide which token holders get exclusive access to products,
+												discounts, and more.</div>
+										</div>
+									</button><button class="keen-slider__slide cursor-pointer"
+										style="min-width: 311.556px; max-width: 311.556px; transform: translate3d(48px, 0px, 0px);">
+										<div
+											class="w-full transition-colors duration-1000 text-left paragraph-dark-background ">
+											<h3 class="h4 mb-4">Shopify Payments</h3>
+											<div><a href="https://www.shopify.com/payments" target="_blank"
+													rel="noopener noreferrer">Integrate Shopify Payments</a> for
+												NFT sales directly from your storefront. Popular payment
+												methods, compliance, and local currencies supported out of the
+												box.</div>
+										</div>
+									</button></div>
+							</div>
+						</div>
+					</section>
+					<div class="pointer-events-none undefined ">
+						<div class="h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex overflow-hidden">
+							<div class="bg-black flex-grow desktop:hidden"></div>
+							<div class="w-[1440px] desktop:w-full flex flex-grow">
+								<div class="bg-black flex-grow "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="bg-black flex-shrink "></div>
+							</div>
+							<div class="bg-black flex-grow desktop:hidden"></div>
+						</div>
+						<div class="h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex overflow-hidden">
+							<div class="bg-black flex-grow desktop:hidden"></div>
+							<div class="w-[1440px] desktop:w-full flex flex-grow">
+								<div class="bg-black flex-grow "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="
+        bg-[#70E390]
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+								<div class="bg-black flex-shrink "></div>
+							</div>
+							<div class="bg-black flex-grow desktop:hidden"></div>
+						</div>
+					</div>
+					<section class="py-28 laptop:py-[80px] bg-seafoam tablet:py-16 mobile:py-20" id="case-studies">
+						<div class="container">
+							<div>
+								<div class="border-t-2 border-black py-8 laptop:py-6">
+									<div class="flex mobile:flex-col items-start">
+										<div class="flex-shrink-0 case-study-card__pop w-[300px] mobile:w-full aspect-[13/10] mobile:aspect-[7/4] mobile:mb-6 overflow-hidden"
+											style="translate: none; rotate: none; scale: none; transform: scale(0.9, 0.9); opacity: 1; visibility: visible;">
+											<a data-event-page="/" data-event-category="main"
+												data-event-action="link_click"
+												data-event-label="CPG x Novel build inclusive tokengated commerce experiences"
+												data-event-href="/case-studies/cpg-x-novel"
+												href="/case-studies/cpg-x-novel"><img id=""
+													alt="A Black female model with short natural hair wearing the Flower Token Tee from CPG’s Fall/Winter 2023 collection"
+													loading="lazy"
+													class="w-full object-cover pointer-events-none transition-transform origin-top duration-500 ease-in-out false"
+													src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/ShopifyBlockchain-CPG_4f90b161-116b-435a-8546-df97692ed723.jpg?v=1675447011&amp;width=1070&amp;height=684"
+													width="1070" height="684"
+													srcset="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/ShopifyBlockchain-CPG_4f90b161-116b-435a-8546-df97692ed723.jpg?v=1675447011&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0611/9273/2728/files/ShopifyBlockchain-CPG_4f90b161-116b-435a-8546-df97692ed723.jpg?v=1675447011&amp;width=832 832w"
+													decoding="async"></a>
+										</div>
+										<div class="w-full max-w-xl mx-auto px-6 tablet:max-w-full mobile:px-0 case-study-card__rise"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<p class="eyebrow mb-4">Case Study</p>
+											<h3 class="mb-4"><a data-event-page="/" data-event-category="main"
+													data-event-action="link_click"
+													data-event-label="CPG x Novel build inclusive tokengated commerce experiences"
+													data-event-href="/case-studies/cpg-x-novel"
+													href="/case-studies/cpg-x-novel">CPG x Novel build inclusive
+													tokengated commerce experiences</a></h3>
+											<p class="mb-4 mobile:mb-6"></p>
+											<p class="paragraph-fira-semibold mobile:mb-6"><a
+													class="group relative undefined" tabindex="0" data-event-page="/"
+													data-event-category="main" data-event-action="link_click"
+													data-event-label="CPG x Novel build inclusive tokengated commerce experiences"
+													data-event-href="/case-studies/cpg-x-novel"
+													href="/case-studies/cpg-x-novel"><span
+														class="relative mr-3 pointer-events-none"><span>Get
+														</span><span>the </span><span>full </span><span
+															class="whitespace-nowrap"><span>story</span><span
+																class="w-[calc(100%_-_2rem)] h-[1px] absolute left-0 bottom-0 scale-x-100 group-hover:scale-x-0 origin-left group-hover:origin-right transition-transform duration-500 bg-black"></span><span
+																class="pointer-events-none" aria-hidden="true">
+																--&gt;</span></span></span></a></p>
+										</div>
+										<div class="flex-shrink-0 case-study-card__rise"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<img id="" alt="Crypto Packaged Goods (CPG) logo " loading="lazy"
+												class="object-contain w-[82px] h-[82px] tablet:w-[72px] tablet:h-[72px]"
+												src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/logo_e4c676e4-0420-4672-87a4-c6bf5f0e04f5.png?v=1675440108&amp;width=168&amp;height=168"
+												width="168" height="168" srcset="" decoding="async">
+										</div>
+									</div>
+								</div>
+								<div class="border-t-2 border-black pt-8 laptop:pt-12 mobile:pt-6">
+									<div class="flex mobile:flex-col items-start">
+										<div class="flex-shrink-0 case-study-card__pop w-[300px] mobile:w-full aspect-[13/10] mobile:aspect-[7/4] mobile:mb-6 overflow-hidden"
+											style="translate: none; rotate: none; scale: none; transform: scale(0.9, 0.9); opacity: 0; visibility: visible">
+											<a data-event-page=" /" data-event-category="main"
+												data-event-action="link_click"
+												data-event-label="How Fox’s Blockchain Creative Labs engages and rewards Krapopolis fans"
+												data-event-href="/case-studies/blockchain-creative-labs"
+												href="/case-studies/blockchain-creative-labs"><img id=""
+													alt="Krapopolis TV show cast of animated characters from Fox"
+													loading="lazy"
+													class="w-full object-cover pointer-events-none transition-transform origin-top duration-500 ease-in-out false"
+													src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/ShopifyBlockchain-Krapopolis1_5bca10a8-6529-4646-9f16-047fddf7c0d6.jpg?v=1675447011&amp;width=1070&amp;height=684"
+													width="1070" height="684"
+													srcset="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/ShopifyBlockchain-Krapopolis1_5bca10a8-6529-4646-9f16-047fddf7c0d6.jpg?v=1675447011&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0611/9273/2728/files/ShopifyBlockchain-Krapopolis1_5bca10a8-6529-4646-9f16-047fddf7c0d6.jpg?v=1675447011&amp;width=832 832w"
+													decoding="async"></a>
+										</div>
+										<div class="w-full max-w-xl mx-auto px-6 tablet:max-w-full mobile:px-0 case-study-card__rise"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<p class="eyebrow mb-4">Case Study</p>
+											<h3 class="mb-4"><a data-event-page="/" data-event-category="main"
+													data-event-action="link_click"
+													data-event-label="How Fox’s Blockchain Creative Labs engages and rewards Krapopolis fans"
+													data-event-href="/case-studies/blockchain-creative-labs"
+													href="/case-studies/blockchain-creative-labs">How Fox’s
+													Blockchain Creative Labs engages and rewards Krapopolis
+													fans</a></h3>
+											<p class="mb-4 mobile:mb-6"></p>
+											<p class="paragraph-fira-semibold mobile:mb-6"><a
+													class="group relative undefined" tabindex="0" data-event-page="/"
+													data-event-category="main" data-event-action="link_click"
+													data-event-label="How Fox’s Blockchain Creative Labs engages and rewards Krapopolis fans"
+													data-event-href="/case-studies/blockchain-creative-labs"
+													href="/case-studies/blockchain-creative-labs"><span
+														class="relative mr-3 pointer-events-none"><span>Get
+														</span><span>the </span><span>full </span><span
+															class="whitespace-nowrap"><span>story</span><span
+																class="w-[calc(100%_-_2rem)] h-[1px] absolute left-0 bottom-0 scale-x-100 group-hover:scale-x-0 origin-left group-hover:origin-right transition-transform duration-500 bg-black"></span><span
+																class="pointer-events-none" aria-hidden="true">
+																--&gt;</span></span></span></a></p>
+										</div>
+										<div class="flex-shrink-0 case-study-card__rise"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<img id="" alt="Blockchain Creative Labs logo" loading="lazy"
+												class="object-contain w-[82px] h-[82px] tablet:w-[72px] tablet:h-[72px]"
+												src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/logo_1.png?v=1675440145&amp;width=168&amp;height=168"
+												width="168" height="168" srcset="" decoding="async">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="relative bg-black text-white overflow-hidden">
+						<div class="absolute top-0 left-0 w-full h-full">
+							<div
+								class="absolute top-0 left-0 right-0 bottom-0 flex items-start justify-center transform-gpu blur-[50px] desktop:blur-[20px]">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 2640 2900"
+									preserveAspectRatio="xMinYMin slice"
+									class="absolute -top-[38%] h-[160%] -translate-x-[2%] tablet:h-[160%] mobile:-top-[20%] mobile:h-[110%] mobile:translate-x-0">
+									<g class="top-left">
+										<path id="top-blue-1" fill="#1238BF" class="opacity-60"
+											d="M648.134 1035.44C513.172 797.481 805.634 597.949 1130.58 687.736C1455.52 777.523 1675.65 1054.22 1576.24 1396.52C1490.35 1692.26 1364.41 1961.3 1284.66 1483.92C1237.25 1200.1 817.527 1334.11 648.134 1035.44Z">
+										</path>
+										<path id="top-pink-1" fill="url(#tp1)" class="opacity-70"
+											d="M853.453 1096.05C725.178 937.504 920.953 759.055 1174.27 788.14C1427.59 817.226 1590.5 1003 1555.5 1264C1525.26 1489.5 1457 2060 1373 1435C1344.63 1223.88 1014.45 1295.05 853.453 1096.05Z">
+										</path>
+										<path id="bottom-blue-1" fill="#1238BF" class="opacity-60"
+											d="M2371.5 1921C2564.23 2115.15 2341.7 2667.57 2004.58 2666.3C1667.46 2665.03 1382.38 2455.88 1388.37 2099.49C1393.55 1791.57 1483.19 1829.01 1746 1982C2032 2148.49 2129.6 1677.32 2371.5 1921Z">
+										</path>
+										<path id="bottom-pink-1" fill="url(#bp1)" class="opacity-70"
+											d="M1484.16 2174.13C1424.16 1886.13 1455.83 1763.7 1484.16 1776.63C1512.5 1789.56 1496.33 1962.5 1656 2174.13C1756.24 2307 2033 2409.5 1810.67 2559.63C1667.21 2656.5 1544.16 2462.13 1484.16 2174.13Z">
+										</path>
+									</g>
+									<g class="invisible">
+										<path id="top-blue-2" fill="#1238BF"
+											d="M1773.5 291.999C2020.55 174.489 2289.76 327.94 2371.5 655C2453.24 982.06 2487.62 1726.34 2132.35 1697.4C1395.01 1637.34 1087.33 1160.21 1538.5 985C2009.39 802.126 1371.54 483.199 1773.5 291.999Z">
+										</path>
+										<path id="top-pink-2" fill="url(#tp4)"
+											d="M1879.5 951.5C2073.53 679.686 2387.99 620.299 2458.82 909.157C2529.65 1198.01 2196.6 1453.06 1948.29 1540.73C1762.15 1606.45 1160.56 1354.44 1309.5 1147C1365.5 1069 1645.56 1279.23 1879.5 951.5Z">
+										</path>
+										<path id="bottom-blue-2" fill="#1238BF"
+											d="M1814.5 2466.5C1770.74 2736.55 938.147 2615.96 741 2342.5C543.853 2069.04 829.813 2088.54 1121.65 1883.88C1373.79 1707.06 1340.27 1789.46 1371 2092C1404.44 2421.23 1869.42 2127.56 1814.5 2466.5Z">
+										</path>
+										<path id="bottom-pink-2" fill="url(#bp4)"
+											d="M1018.89 2020.82C1216.6 1802.98 1252.91 1870.47 1259.11 1900.99C1265.31 1931.52 1237.61 2059.49 1220.61 2241.49C1205.13 2407.22 1794.76 2684.1 1542.61 2592.49C1379.91 2533.38 821.174 2238.66 1018.89 2020.82Z">
+										</path>
+									</g>
+									<g class="invisible">
+										<path id="top-blue-3" fill="#1238BF"
+											d="M909 862C985.21 599.26 1333.11 384.766 1825.61 573.266C2318.11 761.766 2356.07 1182.11 2098.5 1428.5C1563.92 1939.87 1237.87 2011.67 1406.5 1558C1558.34 1149.5 784.999 1289.5 909 862Z">
+										</path>
+										<path id="top-pink-3" fill="url(#tp2)"
+											d="M1370.07 843.56C1387.57 510.059 1869.2 411.088 2084.2 616.589C2299.2 822.09 2155.46 1216.18 1993.2 1423.59C1871.57 1579.06 1210.53 2033.05 1644.07 1487.56C1880.94 1189.53 1348.97 1245.67 1370.07 843.56Z">
+										</path>
+										<path id="bottom-blue-3" fill="#1238BF"
+											d="M1756.11 2495.14C1712.35 2765.18 993.253 2816.1 796.106 2542.64C598.959 2269.17 771.419 2117.18 1063.25 1912.52C1315.39 1735.7 1232.37 1738.1 1263.11 2040.64C1296.55 2369.87 1811.03 2156.2 1756.11 2495.14Z">
+										</path>
+										<path id="bottom-pink-3" fill="url(#bp2)"
+											d="M865.03 2118C1062.74 1900.16 1165.83 1919.48 1172.03 1950C1178.23 1980.52 1103.03 2084.5 1086.03 2266.5C1070.55 2432.22 1064.03 2652.18 811.881 2560.57C649.183 2501.46 667.317 2335.84 865.03 2118Z">
+										</path>
+									</g>
+									<g class="invisible">
+										<path id="top-blue-4" fill="#1238BF"
+											d="M2227.92 2018.16C2493.73 1953.45 2651.82 1346.62 2363.79 1171.43C2075.77 996.245 1723.4 1025.46 1542.16 1332.39C1385.57 1597.57 1353.79 1601.4 1657.81 1608.41C1988.65 1616.04 1894.31 2099.39 2227.92 2018.16Z">
+										</path>
+										<path id="top-pink-4" fill="url(#tp2)"
+											d="M1950.1 1076.39C1708.44 1244.16 1476.69 1492.87 1506.15 1502.97C1535.61 1513.08 1679.16 1399.16 1940.63 1355.38C2104.78 1327.89 2217.03 1753.22 2224.33 1239.18C2226.79 1066.1 2191.75 908.623 1950.1 1076.39Z">
+										</path>
+										<path id="bottom-blue-4" fill="#1238BF"
+											d="M392.707 988.828C121.136 955.828 71.5786 1664.4 279.492 1929.77C487.406 2195.14 900.652 2253.32 1178.34 2029.85C1418.26 1836.77 1542.99 1415.76 1062.7 1480.96C777.565 1519.66 733.561 1030.25 392.707 988.828Z">
+										</path>
+										<path id="bottom-pink-4" fill="url(#bp2)"
+											d="M569.535 1136.91C392.533 1035.6 133.935 1500.12 203.101 1745.54C272.267 1990.96 670.107 2191.55 922.168 2115.31C1151.62 2045.92 1259.38 1826.59 1009.96 1789.43C751.314 1750.9 791.692 1264.06 569.535 1136.91Z">
+										</path>
+									</g>
+									<g class="invisible">
+										<path id="top-blue-5" fill="#1238BF"
+											d="M2002.5 861.502C2258.36 764.669 2334.11 1916.69 2195.5 2224C2056.9 2531.31 1642.48 2184.78 1319.5 2034C1040.45 1903.73 1161.5 1760.5 1570.5 1844C1852.44 1901.56 1681.37 983.038 2002.5 861.502Z">
+										</path>
+										<path id="top-pink-5" fill="url(#tp2)"
+											d="M1921.5 1513.52C2018.95 1334.36 2242.76 1268.33 2312.75 1513.52C2382.74 1758.7 2273.05 2057.04 2018.5 2124.5C1798.58 2182.79 844.984 1885.93 1474 1841C1838 1815 1799.19 1738.37 1921.5 1513.52Z">
+										</path>
+										<path id="bottom-blue-5" fill="#1238BF"
+											d="M956.001 2101C648.001 2416 98.6319 2188.43 172.501 1859.5C246.369 1530.58 677.27 985.366 1024 1068C1323.57 1139.4 1117.52 1109.32 911.501 1333C687.308 1576.42 1196.05 1855.5 956.001 2101Z">
+										</path>
+										<path id="bottom-pink-5" fill="url(#bp2)"
+											d="M839.999 958.501C1106 1075.5 1650 1144.5 1187 1112C723.999 1079.5 618 1082.38 618 1424C618 1657 910.5 1889.5 553 2084.5C191.746 2281.55 -104.098 543.245 839.999 958.501Z">
+										</path>
+									</g>
+									<g class="invisible">
+										<path id="top-blue-6" fill="#1238BF"
+											d="M2073 721.001C2334.45 640.475 2468.92 1266 2343.5 1503C2218.08 1740 2037.5 1930.5 1744 1854.5C1445.87 1777.3 723.053 1401.47 1206.5 1424.5C2019.5 1463.24 1514 893.172 2073 721.001Z">
+										</path>
+										<path id="top-pink-6" fill="url(#tp2)"
+											d="M1929.24 1012.37C2111.71 921.268 2271.69 1207.54 2188.71 1448.64C2105.73 1689.74 1889.22 1808.81 1641.89 1718.4C1481.24 1659.67 729.623 1519.87 1360.24 1519.87C1883.74 1519.87 1700.23 1126.72 1929.24 1012.37Z">
+										</path>
+										<path id="bottom-blue-6" fill="#1238BF"
+											d="M1607.49 2459.59C1376.38 2605.97 183.5 2459.59 208.5 1998.09C233.5 1536.58 579.046 1352.28 925.777 1434.91C1225.35 1506.31 910.218 1724.73 776.987 1998.09C585 2392 1897.56 2275.86 1607.49 2459.59Z">
+										</path>
+										<path id="bottom-pink-6" fill="url(#bp2)"
+											d="M778.261 1488.29C1072.42 1491.75 1185.16 1549.04 1166.43 1573.93C1147.69 1598.81 982.299 1545.77 741.241 1656.09C589.894 1725.35 404.5 1942 298.5 1802.5C193.771 1664.67 484.098 1484.83 778.261 1488.29Z">
+										</path>
+									</g>
+									<g class="invisible">
+										<path id="top-blue-7" fill="#1238BF"
+											d="M590.909 782.374C316.409 286.373 1023.37 240.608 1360.32 251.14C1697.28 261.671 2085.43 500.756 1960.73 834.67C1701.9 1527.69 1686.47 1566.22 1640.91 1084.37C1593.36 581.465 840.176 1232.78 590.909 782.374Z">
+										</path>
+										<path id="top-pink-7" fill="url(#tp4)"
+											d="M814.576 814.19C681.648 659.519 1190.56 405.051 1444.63 426.599C1698.69 448.147 1661.35 524.173 1719.91 725.873C1764.91 880.873 1723.91 1167.37 1603.41 880.873C1495.92 625.301 981.416 1008.32 814.576 814.19Z">
+										</path>
+										<path id="bottom-blue-7" fill="#1238BF"
+											d="M1880.41 2244.87C1880.41 2833.11 496.834 2623.62 436.909 2291.87C376.984 1960.12 640.409 1871.37 819.587 1798.77C1105 1683.11 1283.67 1763.16 1180.91 2049.37C1069.08 2360.83 1880.41 1661.87 1880.41 2244.87Z">
+										</path>
+										<path id="bottom-pink-7" fill="url(#bp4)"
+											d="M731.993 1947.35C876.58 1843.65 1099.41 1690.87 1065.41 2062.37C1031.41 2433.87 1830.13 2287.95 1727.41 2458.87C1633.88 2614.51 917.868 2695.82 712.494 2487.52C579.978 2353.11 470.786 2134.69 731.993 1947.35Z">
+										</path>
+									</g>
+									<g class="invisible">
+										<path id="top-blue-8" fill="#1238BF"
+											d="M430.445 920.374C155.945 424.373 923.545 343.468 1260.5 354C1597.46 364.531 2307.76 470.27 2139.5 784.5C1626 1743.5 1480 1343.5 1626 1114C1897.14 687.785 679.712 1370.78 430.445 920.374Z">
+										</path>
+										<path id="top-pink-8" fill="url(#tp4)"
+											d="M882.539 632.435C817.853 439.021 1199 250.114 1481 394.001L1483.17 395.108C1764.49 538.646 2053.84 686.278 1930.04 917.936C1822.8 1118.6 1575.66 1298.65 1686.04 1098.94C1880.04 747.936 1032.37 1080.43 882.539 632.435Z">
+										</path>
+										<path id="bottom-blue-8" fill="#1238BF"
+											d="M1856.38 1829.93C1994.19 2066.26 1283.38 2675.32 957.385 2589.44C631.388 2503.55 646.09 2321.4 741.385 1977.93C823.718 1681.18 885.757 1831.3 1167.63 1945.41C1381.39 2031.93 1683.42 1533.32 1856.38 1829.93Z">
+										</path>
+										<path id="bottom-pink-8" fill="url(#bp4)"
+											d="M892.506 2244.54C859.621 2069.68 892.507 1727.39 1104.5 1986.04C1316.5 2244.7 1794.7 1790.96 1836.01 1986.04C1937.01 2463.04 1563.83 2569.2 1456.01 2581.54C1259.51 2604.04 951.916 2560.45 892.506 2244.54Z">
+										</path>
+									</g>
+									<g class="invisible">
+										<path id="top-blue-9" fill="#1238BF"
+											d="M793.5 600.5C519 104.499 1013.96 186.736 1350.91 197.267C1687.87 207.798 2076.02 446.884 1951.32 780.798C1692.49 1473.82 1470.89 1448.9 1557 1196C1684 823.001 1068 1096.5 793.5 600.5Z">
+										</path>
+										<path id="top-pink-9" fill="url(#tp3)"
+											d="M1183 658C1118.31 464.586 1818.38 461.614 2045.5 577.5C2272.62 693.386 2207.62 869.247 2083.5 1101.5C1977.16 1300.5 1563 1429.5 1651.5 1334.5C2008.76 951 1332.83 1106 1183 658Z">
+										</path>
+										<path id="bottom-blue-9" fill="#1238BF"
+											d="M2224.44 2230.25C2180.68 2500.3 1168.15 2620.96 971 2347.5C773.853 2074.04 1192.65 1771.57 1537 1679.5C1825 1602.5 1836.27 1584.96 1867 1887.5C1900.44 2216.74 2279.36 1891.31 2224.44 2230.25Z">
+										</path>
+										<path id="bottom-pink-9" fill="url(#bp3)"
+											d="M1420 1887C1505.72 1731.08 1873.59 1531 1873 1830.5C1872.41 2130 2207.42 1930.84 2181 2128.5C2123.5 2558.64 1734.07 2572.49 1458.94 2473.14C1281.42 2409.03 1265.13 2168.68 1420 1887Z">
+										</path>
+									</g>
+									<defs>
+										<radialGradient id="tp1" cx="0.4" cy="0.8" r="0.7">
+											<stop offset=".078" stop-color="#FF2002"></stop>
+											<stop offset=".771" stop-color="#FF7C32"></stop>
+											<stop offset=".839" stop-color="#FF57A7"></stop>
+										</radialGradient>
+										<radialGradient id="bp1" cx="0" cy="0" r="1"
+											gradientTransform="matrix(-12.3063 297.0642 -244.15758 -10.11456 1202.74 1644.23)"
+											gradientUnits="userSpaceOnUse">
+											<stop offset=".078" stop-color="#FF2002"></stop>
+											<stop offset=".771" stop-color="#FF7C32"></stop>
+											<stop offset=".839" stop-color="#FF57A7"></stop>
+										</radialGradient>
+										<radialGradient id="tp2" cx="0" cy="0" r="1">
+											<stop offset=".078" stop-color="#FF2002"></stop>
+											<stop offset=".771" stop-color="#F56210"></stop>
+											<stop offset="1" stop-color="#FF459D"></stop>
+										</radialGradient>
+										<radialGradient id="bp2" cx="0" cy="0" r="1"
+											gradientTransform="matrix(-247.55138 164.6721 -135.34429 -203.4629 640.88 2185.91)"
+											gradientUnits="userSpaceOnUse">
+											<stop offset=".078" stop-color="#FF2002"></stop>
+											<stop offset=".771" stop-color="#FF7C32"></stop>
+											<stop offset=".839" stop-color="#FF57A7"></stop>
+										</radialGradient>
+										<radialGradient id="tp3" cx="0" cy="0" r="1"
+											gradientTransform="rotate(113.644 262.341 891.186) scale(350.921 384.062)"
+											gradientUnits="userSpaceOnUse">
+											<stop offset=".078" stop-color="#FF2002"></stop>
+											<stop offset=".771" stop-color="#FF7C32"></stop>
+											<stop offset=".839" stop-color="#FF57A7"></stop>
+										</radialGradient>
+										<radialGradient id="bp3" cx="0" cy="0" r="1"
+											gradientTransform="rotate(125.812 121.986 1247.485) scale(509.287 416.849)"
+											gradientUnits="userSpaceOnUse">
+											<stop offset=".078" stop-color="#FF2002"></stop>
+											<stop offset=".766" stop-color="#FF7C32"></stop>
+											<stop offset=".839" stop-color="#FF57A7"></stop>
+										</radialGradient>
+										<radialGradient id="tp4" cx="0" cy="0" r="1"
+											gradientTransform="rotate(113.644 342.598 878.628) scale(350.921 384.062)"
+											gradientUnits="userSpaceOnUse">
+											<stop offset=".078" stop-color="#FF2002"></stop>
+											<stop offset=".771" stop-color="#FF7C32"></stop>
+											<stop offset=".839" stop-color="#FF57A7"></stop>
+										</radialGradient>
+										<radialGradient id="bp4" cx="0" cy="0" r="1"
+											gradientTransform="rotate(151.362 130.66 1073.089) scale(509.287 416.849)"
+											gradientUnits="userSpaceOnUse">
+											<stop offset=".078" stop-color="#FF2002"></stop>
+											<stop offset=".766" stop-color="#FF7C32"></stop>
+											<stop offset=".839" stop-color="#FF57A7"></stop>
+										</radialGradient>
+									</defs>
+								</svg>
+							</div>
+							<div class="noise noise--heavy"></div>
+						</div>
+						<div class="pointer-events-none relative z-10 ">
+							<div class="h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex overflow-hidden">
+								<div class="bg-seafoam flex-grow desktop:hidden"></div>
+								<div class="w-[1440px] desktop:w-full flex flex-grow">
+									<div class="bg-seafoam flex-shrink "></div>
+									<div class="
+        bg-seafoam
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="bg-seafoam flex-grow "></div>
+								</div>
+								<div class="bg-seafoam flex-grow desktop:hidden"></div>
+							</div>
+							<div class="h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex overflow-hidden">
+								<div class="bg-transparent flex-grow desktop:hidden"></div>
+								<div class="w-[1440px] desktop:w-full flex flex-grow">
+									<div class="bg-transparent flex-shrink "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-seafoam
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="bg-transparent flex-grow "></div>
+								</div>
+								<div class="bg-transparent flex-grow desktop:hidden"></div>
+							</div>
+						</div>
+						<div
+							class="container py-28 laptop:py-[80px] relative pointer-events-none tablet:pointer-events-auto">
+							<h2 class="tablet:max-w-[11ch] mb-5 mobile:mb-4">Kickstart your build</h2>
+							<p class="mb-14 mobile:mb-10 max-w-[55ch]">From documentation and code snippets to
+								partner communities and example apps, explore essential resources to kickstart
+								your build.</p>
+							<ul>
+								<li class="border-t-2 overflow-hidden flex justify-between mobile:block
+      py-10 mobile:py-10">
+									<div class="flex mobile:block pt-2 mobile:pt-0">
+										<div class="resource-list-item__pop inline-block invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<div>
+												<div style="display: grid;">
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Documentation.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a white pixelated finger pointer against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Documentation.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a white pixelated finger pointer against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Documentation.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a white pixelated finger pointer against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Documentation.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a white pixelated finger pointer against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Documentation.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a white pixelated finger pointer against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+												</div>
+											</div>
+										</div>
+										<h3 class="h4 leading-[1.4] tablet:leading-normal mobile:leading-normal w-64 tablet:pb-8 tablet:pr-10 tablet:text-[20px] mobile:pb-4 mobile:px-0 mobile:w-auto flex-shrink-0 resource-list-item__rise invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											Blockchain Documentation</h3>
+									</div>
+									<div class="flex flex-grow justify-between tablet:block resource-list-item__rise invisible "
+										style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+										<div
+											class="paragraph-dark-background w-full mx-auto px-10 tablet:px-0 tablet:pb-6">
+											<div class="max-w-[45ch] mobile:max-w-[50ch]">Whether you’re an app
+												or in-house developer – all you need to know about our
+												components and essential APIs.</div>
+										</div>
+										<div class="w-48 tablet:w-auto flex-shrink-0 paragraph-fira-semibold"><a
+												class="hover:text-lime transition pointer-events-auto"
+												id="resources-documentation-link"
+												aria-label="Shopify Blockchain documentation" data-event-category="main"
+												data-event-action="link_click"
+												data-event-label="docs-blockchain-documentation"
+												data-event-href="https://shopify.dev/apps/blockchain" target="_blank"
+												rel="noreferrer" href="https://shopify.dev/apps/blockchain"><span
+													class="relative mr-3 pointer-events-none"><span
+														class="underline">Read </span><span
+														class="whitespace-nowrap"><span
+															class="underline">documentation</span><span
+															class="undefined"></span><span class="pointer-events-none"
+															aria-hidden="true">
+															--&gt;</span></span></span></a></div>
+									</div>
+								</li>
+								<li class="border-t-2 overflow-hidden flex justify-between mobile:block
+      py-10 mobile:py-10">
+									<div class="flex mobile:block pt-2 mobile:pt-0">
+										<div class="resource-list-item__pop inline-block invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<div>
+												<div style="display: grid;">
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Components_Repo.png?v=1675718611"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with some coding syntax against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Components_Repo.png?v=1675718611"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with some coding syntax against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Components_Repo.png?v=1675718611"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with some coding syntax against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Components_Repo.png?v=1675718611"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with some coding syntax against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Components_Repo.png?v=1675718611"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with some coding syntax against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+												</div>
+											</div>
+										</div>
+										<h3 class="h4 leading-[1.4] tablet:leading-normal mobile:leading-normal w-64 tablet:pb-8 tablet:pr-10 tablet:text-[20px] mobile:pb-4 mobile:px-0 mobile:w-auto flex-shrink-0 resource-list-item__rise invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											React Components Repo</h3>
+									</div>
+									<div class="flex flex-grow justify-between tablet:block resource-list-item__rise invisible "
+										style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+										<div
+											class="paragraph-dark-background w-full mx-auto px-10 tablet:px-0 tablet:pb-6">
+											<div class="max-w-[45ch] mobile:max-w-[50ch]">Join discussions, get
+												code snippets, submit feature requests, report bugs, and more.
+											</div>
+										</div>
+										<div class="w-48 tablet:w-auto flex-shrink-0 paragraph-fira-semibold"><a
+												class="hover:text-lime transition pointer-events-auto"
+												id="resources-github-link"
+												aria-label="Shopify Blockchain Components on Github"
+												data-event-category="main" data-event-action="link_click"
+												data-event-label="docs-blockchain-components-repo"
+												data-event-href="https://github.com/Shopify/blockchain-components"
+												target="_blank" rel="noreferrer"
+												href="https://github.com/Shopify/blockchain-components"><span
+													class="relative mr-3 pointer-events-none"><span
+														class="underline">Explore </span><span
+														class="whitespace-nowrap"><span
+															class="underline">repo</span><span
+															class="undefined"></span><span class="pointer-events-none"
+															aria-hidden="true">
+															--&gt;</span></span></span></a></div>
+									</div>
+								</li>
+								<li class="border-t-2 overflow-hidden flex justify-between mobile:block
+      py-10 mobile:py-10">
+									<div class="flex mobile:block pt-2 mobile:pt-0">
+										<div class="resource-list-item__pop inline-block invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<div>
+												<div style="display: grid;">
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Tutorial.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a video ready to play against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Tutorial.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a video ready to play against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Tutorial.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a video ready to play against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Tutorial.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a video ready to play against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Tutorial.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a video ready to play against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+												</div>
+											</div>
+										</div>
+										<h3 class="h4 leading-[1.4] tablet:leading-normal mobile:leading-normal w-64 tablet:pb-8 tablet:pr-10 tablet:text-[20px] mobile:pb-4 mobile:px-0 mobile:w-auto flex-shrink-0 resource-list-item__rise invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											Tokengating app tutorial</h3>
+									</div>
+									<div class="flex flex-grow justify-between tablet:block resource-list-item__rise invisible "
+										style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+										<div
+											class="paragraph-dark-background w-full mx-auto px-10 tablet:px-0 tablet:pb-6">
+											<div class="max-w-[45ch] mobile:max-w-[50ch]">Set up a gate
+												configuration, allow buyers to connect and verify their wallets,
+												and create a tokengated discount function.</div>
+										</div>
+										<div class="w-48 tablet:w-auto flex-shrink-0 paragraph-fira-semibold"><a
+												class="hover:text-lime transition pointer-events-auto"
+												id="resources-tutorial-link"
+												aria-label="Shopify Blockchain Tokengating app tutorial"
+												data-event-category="main" data-event-action="link_click"
+												data-event-label="docs-tokengating-app-tutorial"
+												data-event-href="https://shopify.dev/docs/apps/blockchain/tokengating/build-a-tokengating-app"
+												target="_blank" rel="noreferrer"
+												href="https://shopify.dev/docs/apps/blockchain/tokengating/build-a-tokengating-app"><span
+													class="relative mr-3 pointer-events-none"><span
+														class="underline">Follow </span><span
+														class="whitespace-nowrap"><span
+															class="underline">tutorial</span><span
+															class="undefined"></span><span class="pointer-events-none"
+															aria-hidden="true">
+															--&gt;</span></span></span></a></div>
+									</div>
+								</li>
+								<li class="border-t-2 overflow-hidden flex justify-between mobile:block
+      py-10 mobile:py-10">
+									<div class="flex mobile:block pt-2 mobile:pt-0">
+										<div class="resource-list-item__pop inline-block invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<div>
+												<div style="display: grid;">
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Discord.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of pixelated conversation bubbles against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Discord.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of pixelated conversation bubbles against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Discord.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of pixelated conversation bubbles against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Discord.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of pixelated conversation bubbles against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Discord.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of pixelated conversation bubbles against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+												</div>
+											</div>
+										</div>
+										<h3 class="h4 leading-[1.4] tablet:leading-normal mobile:leading-normal w-64 tablet:pb-8 tablet:pr-10 tablet:text-[20px] mobile:pb-4 mobile:px-0 mobile:w-auto flex-shrink-0 resource-list-item__rise invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											ShopifyDevs Discord</h3>
+									</div>
+									<div class="flex flex-grow justify-between tablet:block resource-list-item__rise invisible "
+										style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+										<div
+											class="paragraph-dark-background w-full mx-auto px-10 tablet:px-0 tablet:pb-6">
+											<div class="max-w-[45ch] mobile:max-w-[50ch]">Connect, learn, and
+												stay on top of the latest product announcements with the Shopify
+												Developer community.</div>
+										</div>
+										<div class="w-48 tablet:w-auto flex-shrink-0 paragraph-fira-semibold"><a
+												class="hover:text-lime transition pointer-events-auto"
+												id="resources-discord-link" aria-label="ShopifyDevs Discord"
+												data-event-category="main" data-event-action="link_click"
+												data-event-label="docs-shopifydevs-discord"
+												data-event-href="https://discord.com/invite/shopifydevs" target="_blank"
+												rel="noreferrer" href="https://discord.com/invite/shopifydevs"><span
+													class="relative mr-3 pointer-events-none"><span
+														class="underline">Join </span><span class="underline">the
+													</span><span class="whitespace-nowrap"><span
+															class="underline">conversation</span><span
+															class="undefined"></span><span class="pointer-events-none"
+															aria-hidden="true">
+															--&gt;</span></span></span></a></div>
+									</div>
+								</li>
+								<li class="border-t-2 overflow-hidden flex justify-between mobile:block
+      py-10 mobile:py-10">
+									<div class="flex mobile:block pt-2 mobile:pt-0">
+										<div class="resource-list-item__pop inline-block invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<div>
+												<div style="display: grid;">
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Blog.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a blog post against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Blog.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a blog post against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Blog.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a blog post against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Blog.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a blog post against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Blog.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated browser window with a blog post against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+												</div>
+											</div>
+										</div>
+										<h3 class="h4 leading-[1.4] tablet:leading-normal mobile:leading-normal w-64 tablet:pb-8 tablet:pr-10 tablet:text-[20px] mobile:pb-4 mobile:px-0 mobile:w-auto flex-shrink-0 resource-list-item__rise invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											Shopify x thirdweb</h3>
+									</div>
+									<div class="flex flex-grow justify-between tablet:block resource-list-item__rise invisible "
+										style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+										<div
+											class="paragraph-dark-background w-full mx-auto px-10 tablet:px-0 tablet:pb-6">
+											<div class="max-w-[45ch] mobile:max-w-[50ch]">Accelerate your web3
+												development with CommerceKit, the all-in-one web3 framework
+												built by thirdweb.</div>
+										</div>
+										<div class="w-48 tablet:w-auto flex-shrink-0 paragraph-fira-semibold"><a
+												class="hover:text-lime transition pointer-events-auto"
+												id="shopify-x-thirdweb-case-study" aria-label="Shopify x thirdweb"
+												data-event-category="main" data-event-action="link_click"
+												data-event-label="docs-shopify-x-thirdweb"
+												data-event-href="/case-studies/thirdweb-commercekit-launch"
+												href="/case-studies/thirdweb-commercekit-launch"><span
+													class="relative mr-3 pointer-events-none"><span
+														class="underline">Learn </span><span class="underline">more
+													</span><span class="underline">about </span><span
+														class="whitespace-nowrap"><span
+															class="underline">CommerceKit</span><span
+															class="undefined"></span><span class="pointer-events-none"
+															aria-hidden="true">
+															--&gt;</span></span></span></a></div>
+									</div>
+								</li>
+								<li class="border-t-2 overflow-hidden flex justify-between mobile:block
+      pt-10 mobile:pt-10">
+									<div class="flex mobile:block pt-2 mobile:pt-0">
+										<div class="resource-list-item__pop inline-block invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											<div>
+												<div style="display: grid;">
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Partners.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated network of items against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Partners.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated network of items against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Partners.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated network of items against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Partners.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated network of items against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+													<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
+														style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+														<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Partners.png?v=1675718610"
+															width="58px" height="58px"
+															alt="Icon of a pixelated network of items against a violet/blue rounded square"
+															loading="lazy" decoding="async">
+													</div>
+												</div>
+											</div>
+										</div>
+										<h3 class="h4 leading-[1.4] tablet:leading-normal mobile:leading-normal w-64 tablet:pb-8 tablet:pr-10 tablet:text-[20px] mobile:pb-4 mobile:px-0 mobile:w-auto flex-shrink-0 resource-list-item__rise invisible"
+											style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+											Web3 Partners</h3>
+									</div>
+									<div class="flex flex-grow justify-between tablet:block resource-list-item__rise invisible pointer-events-auto"
+										style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+										<div
+											class="paragraph-dark-background w-full mx-auto px-10 tablet:px-0 tablet:pb-6">
+											<div class="max-w-[45ch] mobile:max-w-[50ch]">Follow web3 app
+												building guides, step-by-step tutorials, and more from <a
+													href="https://thirdweb.com/solutions/commerce" target="_blank"
+													rel="noopener noreferrer">thirdweb</a>, <a
+													href="https://walletconnect.com/" target="_blank"
+													rel="noopener noreferrer">WalletConnect</a>, and <a
+													href="https://www.alchemy.com/" target="_blank"
+													rel="noopener noreferrer">Alchemy</a>.</div>
+										</div>
+										<div class="w-48 tablet:w-auto flex-shrink-0 paragraph-fira-semibold">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="pointer-events-none relative z-10 ">
+							<div class="h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex overflow-hidden">
+								<div class="bg-transparent flex-grow desktop:hidden"></div>
+								<div class="w-[1440px] desktop:w-full flex flex-grow">
+									<div class="bg-transparent flex-shrink "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="bg-transparent flex-grow "></div>
+								</div>
+								<div class="bg-transparent flex-grow desktop:hidden"></div>
+							</div>
+							<div class="h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex overflow-hidden">
+								<div class="bg-black flex-grow desktop:hidden"></div>
+								<div class="w-[1440px] desktop:w-full flex flex-grow">
+									<div class="bg-black flex-shrink "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        mobile:hidden
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-transparent
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="
+        bg-black
+        hidden mobile:block
+        tablet:w-[6.25%] mobile:w-[12.5%]
+        w-[72px] h-[72px] tablet:h-[6.25vw] mobile:h-[12.5vw] flex-shrink-0
+      "></div>
+									<div class="bg-black flex-grow "></div>
+								</div>
+								<div class="bg-black flex-grow desktop:hidden"></div>
+							</div>
+						</div>
+					</section>
+					<section class="py-28 laptop:py-[80px] bg-black text-white">
+						<div class="container">
+							<div class="max-w-lg mb-12">
+								<h2 aria-label="Blockchain partner apps" class="mb-6" style="">
+									<div class="leading-none overflow-hidden"
+										style="display: block; text-align: start; position: relative;">
+										<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+											class="leading-none overflow-hidden">Blockchain</div>
+									</div>
+									<div class="leading-none overflow-hidden"
+										style="display: block; text-align: start; position: relative;">
+										<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+											class="leading-none overflow-hidden">partner</div>
+										<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+											class="leading-none overflow-hidden">apps</div>
+									</div>
+								</h2>
+								<div class="" style="">
+									<div class="overflow-hidden lineParent"
+										style="display: block; text-align: start; position: relative;">
+										<div class="lineChild"
+											style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform: translate(0%, 103%);">
+											Discover the latest blockchain apps powering the most innovative
+										</div>
+									</div>
+									<div class="overflow-hidden lineParent"
+										style="display: block; text-align: start; position: relative;">
+										<div class="lineChild"
+											style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform: translate(0%, 103%);">
+											entrepreneurs on Shopify.</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid grid-cols-12 gap-4">
+								<div class="col-span-6 mobile:col-span-12"
+									style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+									<div class="h-full flex flex-col"
+										style="will-change: transform; transform: perspective(3000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+										<div
+											class="relative w-full padding-aspect padding-aspect--6/2 mobile:padding-aspect--7/2 rounded-tl-[10px] rounded-tr-[10px]">
+											<div class="absolute top-0 left-0 w-full h-full rounded-tl-[10px] rounded-tr-[10px] bg-gradient-to-r gradient--orange-teal"
+												style="background-position: 30% 0%; background-size: 200% 100%;">
+											</div>
+											<div class="noise undefined"></div>
+											<div
+												class="absolute top-0 left-0 w-full h-full flex items-center justify-center px-5">
+												<div class="flex justify-center w-full">
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CIGU4sqm8vYCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Novel logo"
+																		loading="lazy" decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CIGU4sqm8vYCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Novel logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CIGU4sqm8vYCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Novel logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CIGU4sqm8vYCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Novel logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CIGU4sqm8vYCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Novel logo"
+																		loading="lazy" decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Rectangle_8678.jpg?v=1675704137"
+																		width="78px" height="78px" alt="Verisart logo"
+																		loading="lazy" decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Rectangle_8678.jpg?v=1675704137"
+																		width="78px" height="78px" alt="Verisart logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Rectangle_8678.jpg?v=1675704137"
+																		width="78px" height="78px" alt="Verisart logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Rectangle_8678.jpg?v=1675704137"
+																		width="78px" height="78px" alt="Verisart logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Rectangle_8678.jpg?v=1675704137"
+																		width="78px" height="78px" alt="Verisart logo"
+																		loading="lazy" decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CMC_2eee8fkCEAE.webp?v=1675108378"
+																		width="78px" height="78px"
+																		alt="Venly (Polygon) logo" loading="lazy"
+																		decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CMC_2eee8fkCEAE.webp?v=1675108378"
+																		width="78px" height="78px"
+																		alt="Venly (Polygon) logo" loading="lazy"
+																		decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CMC_2eee8fkCEAE.webp?v=1675108378"
+																		width="78px" height="78px"
+																		alt="Venly (Polygon) logo" loading="lazy"
+																		decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CMC_2eee8fkCEAE.webp?v=1675108378"
+																		width="78px" height="78px"
+																		alt="Venly (Polygon) logo" loading="lazy"
+																		decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CMC_2eee8fkCEAE.webp?v=1675108378"
+																		width="78px" height="78px"
+																		alt="Venly (Polygon) logo" loading="lazy"
+																		decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CLLq27b0lu8CEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Single logo"
+																		loading="lazy" decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CLLq27b0lu8CEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Single logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CLLq27b0lu8CEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Single logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CLLq27b0lu8CEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Single logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CLLq27b0lu8CEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Single logo"
+																		loading="lazy" decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CK-aw_Hul_cCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Taco logo"
+																		loading="lazy" decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CK-aw_Hul_cCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Taco logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CK-aw_Hul_cCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Taco logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CK-aw_Hul_cCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Taco logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CK-aw_Hul_cCEAE.webp?v=1675108379"
+																		width="78px" height="78px" alt="Taco logo"
+																		loading="lazy" decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="bg-lemon text-black pt-10 pb-6 px-10 laptop:p-7 tablet:p-6 rounded-bl-[10px] rounded-br-[10px] flex-grow flex flex-col">
+											<div class="flex-grow">
+												<h3 class="mb-4 tablet:mb-2">NFT minting apps</h3>
+												<p class="mb-4 tablet:mb-2">Check out minting apps built on
+													popular blockchains like Ethereum, Polygon, Solana, and
+													Flow.</p>
+											</div>
+											<p class="paragraph-fira-semibold"><a class="group relative undefined"
+													tabindex="0" id="partner-apps-minting"
+													aria-label="NFT minting app partners documentation"
+													data-event-category="main" data-event-action="link_click"
+													data-event-label="partner-apps-nft-minting"
+													data-event-href="https://apps.shopify.com/categories/selling-products-blockchain-nft-distribution"
+													target="_blank" rel="noreferrer"
+													href="https://apps.shopify.com/categories/selling-products-blockchain-nft-distribution"><span
+														class="relative mr-3 pointer-events-none"><span>Show
+														</span><span class="whitespace-nowrap"><span>me</span><span
+																class="w-[calc(100%_-_2rem)] h-[1px] absolute left-0 bottom-0 scale-x-100 group-hover:scale-x-0 origin-left group-hover:origin-right transition-transform duration-500 bg-black"></span><span
+																class="pointer-events-none" aria-hidden="true">
+																--&gt;</span></span></span></a></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-span-6 mobile:col-span-12"
+									style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
+									<div class="h-full flex flex-col"
+										style="will-change: transform; transform: perspective(3000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+										<div
+											class="relative w-full padding-aspect padding-aspect--6/2 mobile:padding-aspect--7/2 rounded-tl-[10px] rounded-tr-[10px]">
+											<div class="absolute top-0 left-0 w-full h-full rounded-tl-[10px] rounded-tr-[10px] bg-gradient-to-r gradient--violet-currant"
+												style="background-position: 30% 0%; background-size: 200% 100%;">
+											</div>
+											<div class="noise undefined"></div>
+											<div
+												class="absolute top-0 left-0 w-full h-full flex items-center justify-center px-5">
+												<div class="flex justify-center w-full">
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPC3ibfe8PUCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Manifold logo"
+																		loading="lazy" decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPC3ibfe8PUCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Manifold logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPC3ibfe8PUCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Manifold logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPC3ibfe8PUCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Manifold logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPC3ibfe8PUCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Manifold logo"
+																		loading="lazy" decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPbTiZOU-_YCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="PERCS logo"
+																		loading="lazy" decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPbTiZOU-_YCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="PERCS logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPbTiZOU-_YCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="PERCS logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPbTiZOU-_YCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="PERCS logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPbTiZOU-_YCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="PERCS logo"
+																		loading="lazy" decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CJO9kO248fYCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Shopthru logo"
+																		loading="lazy" decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CJO9kO248fYCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Shopthru logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CJO9kO248fYCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Shopthru logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CJO9kO248fYCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Shopthru logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CJO9kO248fYCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="Shopthru logo"
+																		loading="lazy" decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPLFnOua_vcCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="ShopX logo"
+																		loading="lazy" decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPLFnOua_vcCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="ShopX logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPLFnOua_vcCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="ShopX logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPLFnOua_vcCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="ShopX logo"
+																		loading="lazy" decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CPLFnOua_vcCEAE.webp?v=1675108815"
+																		width="78px" height="78px" alt="ShopX logo"
+																		loading="lazy" decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mx-2 w-[78px] tablet:mx-1 block">
+														<div>
+															<div style="display: grid;">
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1;"
+																	data-glitched="1"><img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CO2t4eXE6vYCEAE.webp?v=1675108815"
+																		width="78px" height="78px"
+																		alt="AlphaSprouts logo" loading="lazy"
+																		decoding="async"></div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CO2t4eXE6vYCEAE.webp?v=1675108815"
+																		width="78px" height="78px"
+																		alt="AlphaSprouts logo" loading="lazy"
+																		decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CO2t4eXE6vYCEAE.webp?v=1675108815"
+																		width="78px" height="78px"
+																		alt="AlphaSprouts logo" loading="lazy"
+																		decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CO2t4eXE6vYCEAE.webp?v=1675108815"
+																		width="78px" height="78px"
+																		alt="AlphaSprouts logo" loading="lazy"
+																		decoding="async">
+																</div>
+																<div class="relative rounded-[10px] w-full padding-aspect padding-aspect--square"
+																	style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+																	<img class="rounded-[10px]"
+																		src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/CO2t4eXE6vYCEAE.webp?v=1675108815"
+																		width="78px" height="78px"
+																		alt="AlphaSprouts logo" loading="lazy"
+																		decoding="async">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="bg-lemon text-black pt-10 pb-6 px-10 laptop:p-7 tablet:p-6 rounded-bl-[10px] rounded-br-[10px] flex-grow flex flex-col">
+											<div class="flex-grow">
+												<h3 class="mb-4 tablet:mb-2">Tokengating apps</h3>
+												<p class="mb-4 tablet:mb-2">Explore tokengating apps that
+													support advanced gating experiences for Shopify merchants
+													and their token holders.</p>
+											</div>
+											<p class="paragraph-fira-semibold"><a class="group relative undefined"
+													tabindex="0" id="partner-apps-tokengating"
+													aria-label="Tokengating app partners documentation"
+													data-event-category="main" data-event-action="link_click"
+													data-event-label="partner-apps-tokengating"
+													data-event-href="https://apps.shopify.com/categories/selling-products-blockchain-tokengating-loyalty"
+													target="_blank" rel="noreferrer"
+													href="https://apps.shopify.com/categories/selling-products-blockchain-tokengating-loyalty"><span
+														class="relative mr-3 pointer-events-none"><span>Show
+														</span><span class="whitespace-nowrap"><span>me</span><span
+																class="w-[calc(100%_-_2rem)] h-[1px] absolute left-0 bottom-0 scale-x-100 group-hover:scale-x-0 origin-left group-hover:origin-right transition-transform duration-500 bg-black"></span><span
+																class="pointer-events-none" aria-hidden="true">
+																--&gt;</span></span></span></a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="pt-28 laptop:pt-20 bg-black text-white">
+						<div>
+							<div class="container max-w-3xl text-center">
+								<h2 aria-label="What will you build?" class="mb-4" style="">
+									<div class="leading-none overflow-hidden"
+										style="display: block; text-align: center; position: relative;">
+										<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+											class="leading-none overflow-hidden">What</div>
+										<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+											class="leading-none overflow-hidden">will</div>
+										<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+											class="leading-none overflow-hidden">you</div>
+										<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none;"
+											class="leading-none overflow-hidden">build?</div>
+									</div>
+								</h2>
+								<div class="mb-8 paragraph-major w-[80%] mx-auto" style="">
+									<div class="overflow-hidden lineParent"
+										style="display: block; text-align: center; position: relative;">
+										<div class="lineChild"
+											style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; transform: translate(0%, 103%);">
+											Unlock new possibilities, make your mark, and shape the future of
+										</div>
+									</div>
+									<div class="overflow-hidden lineParent"
+										style="display: block; text-align: center; position: relative;">
+										<div class="lineChild"
+											style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; transform: translate(0%, 103%);">
+											commerce with Shopify Blockchain.</div>
+									</div>
+								</div>
+								<div class=""><a class="btn btn--primary-dark tablet:mb-6"
+										aria-label="Shopify App Store documentation" target="_blank" rel="noreferrer"
+										data-event-category="main" data-event-action="button_click"
+										data-event-label="read-documentation"
+										data-event-href="https://shopify.dev/apps/blockchain"
+										href="https://shopify.dev/apps/blockchain"
+										style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">Read
+										documentation<div class="w-2.5 ml-3 svg-width-full"><svg viewBox="0 0 11 16"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M6.58325 -0.000976562C6.89582 -0.000976562 7.1956 0.125451 7.41662 0.350495L10.6548 3.64755C10.8758 3.8726 11 4.17782 11 4.49608V14.799C11 15.4618 10.4723 15.999 9.82143 15.999H1.17857C0.527665 15.999 0 15.4618 0 14.799V1.19902C0 0.536282 0.527664 -0.000976562 1.17857 -0.000976562H6.58325ZM2.35714 3.99902H5.5V5.59902H2.35714V3.99902ZM8.64286 7.19902V8.79902H2.35714V7.19902H8.64286ZM2.35714 11.999V10.399H7.85714V11.999H2.35714Z"
+													fill="currentColor"></path>
+											</svg></div></a></div>
+							</div>
+						</div>
+						<div>
+							<div
+								class="relative bg-black w-[1420px] h-[710px] desktop:w-full desktop:h-[50vw] mx-auto overflow-hidden select-none">
+								<div class="sphere-groups relative w-full h-[1420px] desktop:h-[100vw] ">
+									<div class="sphere-group-5 w-full h-full absolute opacity-1"
+										style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+										<div
+											class="w-[1136px] h-[1136px] desktop:w-[80vw] desktop:h-[80vw] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+											<div class="w-full h-full absolute flex justify-center items-center">
+												<div class="w-full h-full rounded-full sphere-group-5__3"></div>
+											</div>
+											<div class="w-full h-full absolute flex justify-center items-center">
+												<div class="w-[98%] h-[98%] rounded-full sphere-group-5__2">
+												</div>
+											</div>
+											<div class="w-full h-full absolute flex justify-center items-center">
+												<div class="w-[85%] h-[85%] rounded-full sphere-group-5__1">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="sphere-group-4 w-full h-full absolute top-0  opacity-1"
+										style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+										<div
+											class="w-[852px] h-[852px] desktop:w-[60vw] desktop:h-[60vw] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+											<div class="w-full h-full absolute flex justify-center items-center">
+												<div class="w-full h-full rounded-full sphere-group-4__2"></div>
+											</div>
+											<div class="w-full h-full absolute flex justify-center items-center">
+												<div class="w-[90%] h-[90%] rounded-full sphere-group-4__1">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="sphere-group-3 w-full h-full absolute top-0  opacity-1"
+										style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+										<div
+											class="w-[639px] h-[639px] desktop:w-[45vw] desktop:h-[45vw] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+											<div class="w-full h-full absolute flex justify-center items-center">
+												<div class="w-full h-full rounded-full sphere-group-3__2"></div>
+											</div>
+											<div class="w-full h-full absolute flex justify-center items-center">
+												<div class="w-[85%] h-[85%] rounded-full sphere-group-3__1">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="sphere-group-2 w-full h-full absolute top-0  opacity-1"
+										style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+										<div
+											class="w-[497px] h-[497px] desktop:w-[35vw] desktop:h-[35vw] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+											<div
+												class="w-full h-full absolute flex justify-center items-center left-1/2 -translate-x-1/2 translate-y-[40px]">
+												<div class="w-[85%] h-[85%] rounded-full sphere-group-2__2">
+												</div>
+											</div>
+											<div
+												class="w-full h-full absolute flex justify-center items-center left-1/2 -translate-x-1/2">
+												<div class="w-[80%] h-[80%] rounded-full sphere-group-2__1 relative">
+													<div class="w-full h-full absolute rounded-full sphere-group-2__1-inner-shadow sphere-inner-shadow in"
+														opacity: 1; visibility: visible;"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="sphere-group-1 w-full h-full absolute top-0  opacity-1"
+										style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+										<div
+											class="sphere-group-1__container w-[142px] h-[142px] desktop:w-[10vw] desktop:h-[10vw] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+											<div class="w-full h-full absolute flex justify-center items-center translate-y-[30%] sphere-shadow "
+												opacity: 1; visibility: visible;">
+												<div class="w-[80%] h-[80%] rounded-full sphere-group-1__2">
+												</div>
+											</div>
+											<div class="w-full h-full absolute flex justify-center items-center">
+												<div class="w-full h-full rounded-full sphere-group-1__1"></div>
+											</div>
+										</div>
+									</div>
+									<div class="noise undefined"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main><!--$-->
+			<footer role="contentinfo" class="relative z-10">
+				<div class="py-16 bg-black">
+					<div class="container">
+						<div class="grid grid-cols-12 gap-7 tablet:gap-x-4 tablet:gap-y-12">
+							<div class="col-span-2 tablet:col-span-4 mobile:col-span-6 ">
+								<p class="text-xxs mb-4 font-inter font-bold text-white">News and updates</p>
+								<ul class="font-inter font-medium text-white text-xs">
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450124775480"
+											title="Developer Changelog" type="HTTP" target="_blank" class=""
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450124775480"
+											aria-label="Developer Changelog" rel="noreferrer"
+											href="https://shopify.dev/changelog">Developer Changelog</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450124808248" title="Shopify status"
+											type="HTTP" target="_blank" class="" data-event-category="footer"
+											data-event-action="link_click" data-event-page="/"
+											data-event-label="gid://shopify/MenuItem/450124808248"
+											aria-label="Shopify status" rel="noreferrer"
+											href="https://www.shopifystatus.com/">Shopify status</a></li>
+								</ul>
+							</div>
+							<div class="col-span-2 tablet:col-span-4 mobile:col-span-6 ">
+								<p class="text-xxs mb-4 font-inter font-bold text-white">Blogs</p>
+								<ul class="font-inter font-medium text-white text-xs">
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450124873784" title="Partner blog"
+											type="HTTP" target="_blank" class="" data-event-category="footer"
+											data-event-action="link_click" data-event-page="/"
+											data-event-label="gid://shopify/MenuItem/450124873784"
+											aria-label="Partner blog" rel="noreferrer"
+											href="https://www.shopify.com/partners/blog">Partner blog</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450124906552"
+											title="Engineering blog" type="HTTP" target="_blank" class=""
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450124906552"
+											aria-label="Engineering blog" rel="noreferrer"
+											href="https://shopify.engineering/">Engineering blog</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450124939320" title="UX blog"
+											type="HTTP" target="_blank" class="" data-event-category="footer"
+											data-event-action="link_click" data-event-page="/"
+											data-event-label="gid://shopify/MenuItem/450124939320" aria-label="UX blog"
+											rel="noreferrer" href="https://ux.shopify.com/">UX blog</a></li>
+								</ul>
+							</div>
+							<div class="col-span-2 tablet:col-span-4 mobile:col-span-6 ">
+								<p class="text-xxs mb-4 font-inter font-bold text-white">Community</p>
+								<ul class="font-inter font-medium text-white text-xs">
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125004856"
+											title="Developer forums" type="HTTP" target="_blank" class=""
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450125004856"
+											aria-label="Developer forums" rel="noreferrer"
+											href="https://community.shopify.com/c/partners-and-developers/ct-p/appdev">Developer
+											forums</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125037624" title="Slack"
+											type="HTTP" target="_blank" class="" data-event-category="footer"
+											data-event-action="link_click" data-event-page="/"
+											data-event-label="gid://shopify/MenuItem/450125037624" aria-label="Slack"
+											rel="noreferrer"
+											href="https://shopifypartners.slack.com/signup#/domain-signup">Slack</a>
+									</li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125070392" title="Facebook group"
+											type="HTTP" target="_blank" class="" data-event-category="footer"
+											data-event-action="link_click" data-event-page="/"
+											data-event-label="gid://shopify/MenuItem/450125070392"
+											aria-label="Facebook group" rel="noreferrer"
+											href="https://www.facebook.com/shopifypartners/">Facebook group</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-span-2 tablet:col-span-4 mobile:col-span-6 ">
+								<p class="text-xxs mb-4 font-inter font-bold text-white">Social</p>
+								<ul class="font-inter font-medium text-white text-xs">
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125135928" title="Twitch"
+											type="HTTP" target="_blank" class="flex items-center"
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450125135928"
+											aria-label="Twitch" rel="noreferrer"
+											href="https://www.twitch.tv/shopifydevs">
+											<div class="w-3 svg-width-full mr-2.5"><svg role="img" viewBox="0 0 24 24"
+													xmlns="http://www.w3.org/2000/svg">
+													<title>Twitch</title>
+													<path fill="currentColor"
+														d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z">
+													</path>
+												</svg></div> <!-- -->Twitch
+										</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450220916792" title="Discord"
+											type="HTTP" target="_blank" class="flex items-center"
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450220916792"
+											aria-label="Discord" rel="noreferrer" href="https://discord.gg/shopifydevs">
+											<div class="w-3 svg-width-full mr-2.5"><svg viewBox="0 0 26 21" fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+													aria-labelledby="discordIconTitle" class="pointer-events-none">
+													<title id="discordIconTitle">Discord Icon</title>
+													<path
+														d="M21.1907 1.91865C19.5714 1.13615 17.8399 0.567467 16.0297 0.243652C15.8074 0.658771 15.5477 1.21711 15.3686 1.66127C13.4444 1.36239 11.5378 1.36239 9.64892 1.66127C9.46989 1.21711 9.20427 0.658771 8.97997 0.243652C7.16784 0.567467 5.4344 1.13824 3.81509 1.92279C0.54893 7.02035 -0.336473 11.9913 0.10623 16.8916C2.27252 18.5625 4.37192 19.5774 6.43588 20.2416C6.94549 19.5172 7.39999 18.7472 7.79153 17.9357C7.04583 17.643 6.3316 17.2819 5.65675 16.8626C5.83578 16.7256 6.01091 16.5824 6.1801 16.435C10.2962 18.4234 14.7685 18.4234 18.8355 16.435C19.0067 16.5824 19.1818 16.7256 19.3589 16.8626C18.682 17.2839 17.9658 17.6451 17.2201 17.9377C17.6117 18.7472 18.0642 19.5193 18.5758 20.2437C20.6417 19.5795 22.7431 18.5645 24.9094 16.8916C25.4288 11.2109 24.022 6.28559 21.1907 1.91865ZM8.35229 13.878C7.11667 13.878 6.10336 12.6866 6.10336 11.2358C6.10336 9.78497 7.09503 8.59154 8.35229 8.59154C9.60959 8.59154 10.6229 9.78288 10.6012 11.2358C10.6032 12.6866 9.60959 13.878 8.35229 13.878ZM16.6633 13.878C15.4277 13.878 14.4144 12.6866 14.4144 11.2358C14.4144 9.78497 15.406 8.59154 16.6633 8.59154C17.9206 8.59154 18.9339 9.78288 18.9122 11.2358C18.9122 12.6866 17.9206 13.878 16.6633 13.878Z"
+														fill="currentColor"></path>
+												</svg></div> <!-- -->Discord
+										</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125201464" title="Twitter"
+											type="HTTP" target="_blank" class="flex items-center"
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450125201464"
+											aria-label="Twitter" rel="noreferrer"
+											href="https://twitter.com/ShopifyDevs">
+											<div class="w-3 svg-width-full mr-2.5"><svg role="img" viewBox="0 0 24 24"
+													xmlns="http://www.w3.org/2000/svg"
+													aria-labelledby="twitterIconTitle" class="pointer-events-none">
+													<title id="twitterIconTitle">Twitter Icon</title>
+													<path fill="currentColor"
+														d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+													</path>
+												</svg></div> <!-- -->Twitter
+										</a></li>
+								</ul>
+							</div>
+							<div class="col-span-2 tablet:col-span-4 mobile:col-span-6 ">
+								<p class="text-xxs mb-4 font-inter font-bold text-white">Events</p>
+								<ul class="font-inter font-medium text-white text-xs">
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125267000" title="Unite"
+											type="HTTP" target="_blank" class="" data-event-category="footer"
+											data-event-action="link_click" data-event-page="/"
+											data-event-label="gid://shopify/MenuItem/450125267000" aria-label="Unite"
+											rel="noreferrer" href="https://unite.shopify.com/">Unite</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125299768" title="Meetups"
+											type="HTTP" target="_blank" class="" data-event-category="footer"
+											data-event-action="link_click" data-event-page="/"
+											data-event-label="gid://shopify/MenuItem/450125299768" aria-label="Meetups"
+											rel="noreferrer" href="https://events.shopify.com/partners">Meetups</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125332536"
+											title="Shopify Partner Town Hall" type="HTTP" target="_blank" class=""
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450125332536"
+											aria-label="Shopify Partner Town Hall" rel="noreferrer"
+											href="https://events.shopify.com/partnertownhall">Shopify Partner
+											Town Hall</a></li>
+								</ul>
+							</div>
+							<div class="col-span-2 tablet:col-span-4 mobile:col-span-6 ">
+								<p class="text-xxs mb-4 font-inter font-bold text-white">Legal</p>
+								<ul class="font-inter font-medium text-white text-xs">
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125398072"
+											title="API Terms of Service" type="HTTP" target="_blank" class=""
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450125398072"
+											aria-label="API Terms of Service" rel="noreferrer"
+											href="https://www.shopify.com/legal/api-terms">API Terms of
+											Service</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125430840" title="Privacy policy"
+											type="HTTP" target="_blank" class="" data-event-category="footer"
+											data-event-action="link_click" data-event-page="/"
+											data-event-label="gid://shopify/MenuItem/450125430840"
+											aria-label="Privacy policy" rel="noreferrer"
+											href="https://www.shopify.com/legal/privacy">Privacy policy</a></li>
+									<li class="mb-2"><a id="gid://shopify/MenuItem/450125463608"
+											title="Partner program agreement" type="HTTP" target="_blank" class=""
+											data-event-category="footer" data-event-action="link_click"
+											data-event-page="/" data-event-label="gid://shopify/MenuItem/450125463608"
+											aria-label="Partner program agreement" rel="noreferrer"
+											href="https://www.shopify.com/partners/terms">Partner program
+											agreement</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="py-9 bg-black">
+					<div class="container">
+						<ul
+							class="font-bold text-white flex flex-wrap justify-start mobile:justify-center gap-4 text-xs">
+							<li class="mb-6"><a id="gid://shopify/MenuItem/450125496376" title="About Shopify"
+									type="HTTP" target="_blank" class="" data-event-category="footer"
+									data-event-action="link_click" data-event-page="/"
+									data-event-label="gid://shopify/MenuItem/450125496376" aria-label="About Shopify"
+									rel="noreferrer" href="https://www.shopify.com/about">About Shopify</a></li>
+							<li class="mb-6"><a id="gid://shopify/MenuItem/450125529144" title="Shopify Plus"
+									type="HTTP" target="_blank" class="" data-event-category="footer"
+									data-event-action="link_click" data-event-page="/"
+									data-event-label="gid://shopify/MenuItem/450125529144" aria-label="Shopify Plus"
+									rel="noreferrer" href="https://www.shopify.com/plus">Shopify Plus</a></li>
+							<li class="mb-6"><a id="gid://shopify/MenuItem/450125561912" title="Careers" type="HTTP"
+									target="_blank" class="" data-event-category="footer" data-event-action="link_click"
+									data-event-page="/" data-event-label="gid://shopify/MenuItem/450125561912"
+									aria-label="Careers" rel="noreferrer"
+									href="https://www.shopify.com/careers">Careers</a></li>
+							<li class="mb-6"><a id="gid://shopify/MenuItem/450125594680" title="Investors" type="HTTP"
+									target="_blank" class="" data-event-category="footer" data-event-action="link_click"
+									data-event-page="/" data-event-label="gid://shopify/MenuItem/450125594680"
+									aria-label="Investors" rel="noreferrer"
+									href="https://investors.shopify.com/home/">Investors</a></li>
+							<li class="mb-6"><a id="gid://shopify/MenuItem/450125627448" title="Press and media"
+									type="HTTP" target="_blank" class="" data-event-category="footer"
+									data-event-action="link_click" data-event-page="/"
+									data-event-label="gid://shopify/MenuItem/450125627448" aria-label="Press and media"
+									rel="noreferrer" href="https://news.shopify.com/">Press and media</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer><!--/$-->
+		</div>
+	</div>
+	</div>
+
+	<script src="src/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+</body>
+
+</html>
