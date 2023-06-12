@@ -93,6 +93,140 @@ var fullAnimation = (function () {
     colouredRectangles.reverse();
   }
 
+  //sphere animation
+
+  function fitElementToParent(el, padding) {
+    var timeout = null;
+    function resize() {
+      if (timeout) clearTimeout(timeout);
+      anime.set(el, { scale: 1 });
+      var pad = padding || 0;
+      var parentEl = el.parentNode;
+      var elOffsetWidth = el.offsetWidth - pad;
+      var parentOffsetWidth = parentEl.offsetWidth;
+      var ratio = parentOffsetWidth / elOffsetWidth;
+      timeout = setTimeout(anime.set(el, { scale: ratio }), 10);
+    }
+    resize();
+    window.addEventListener("resize", resize);
+  }
+
+  var sphereAnimation = (function () {
+    var sphereEl = document.querySelector(".sphere-animation");
+    var spherePathEls = sphereEl.querySelectorAll(".sphere path");
+    var pathLength = spherePathEls.length;
+    var hasStarted = false;
+    var aimations = [];
+
+    fitElementToParent(sphereEl);
+
+    var breathAnimation = anime({
+      begin: function () {
+        for (var i = 0; i < pathLength; i++) {
+          aimations.push(
+            anime({
+              targets: spherePathEls[i],
+              stroke: {
+                value: ["rgba(145, 59, 99, 1)", "rgba(174, 134, 255, 1)"],
+                duration: 500,
+              },
+              translateX: [2, -4],
+              translateY: [2, -4],
+              easing: "easeOutQuad",
+              autoplay: false,
+            })
+          );
+        }
+      },
+      update: function (ins) {
+        aimations.forEach(function (animation, i) {
+          var percent = (1 - Math.sin(i * 0.35 + 0.0022 * ins.currentTime)) / 2;
+          animation.seek(animation.duration * percent);
+        });
+      },
+      duration: Infinity,
+      autoplay: false,
+    });
+
+    var introAnimation = anime
+      .timeline({
+        autoplay: false,
+      })
+      .add(
+        {
+          targets: spherePathEls,
+          strokeDashoffset: {
+            value: [anime.setDashoffset, 0],
+            duration: 3900,
+            easing: "easeInOutCirc",
+            delay: anime.stagger(190, { direction: "reverse" }),
+          },
+          duration: 2000,
+          delay: anime.stagger(60, { direction: "reverse" }),
+          easing: "linear",
+        },
+        0
+      );
+
+    var shadowAnimation = anime(
+      {
+        targets: "#sphereGradient",
+        x1: "25%",
+        x2: "25%",
+        y1: "0%",
+        y2: "75%",
+        duration: 30000,
+        easing: "easeOutQuint",
+        autoplay: false,
+      },
+      0
+    );
+
+    function init() {
+      introAnimation.play();
+      breathAnimation.play();
+      shadowAnimation.play();
+    }
+
+    init();
+  })();
+
+  VanillaTilt.init(document.querySelectorAll("#inner-box"), {
+    max: 5,
+    speed: 1000,
+    glare: true,
+    "max-glare": 0.5,
+    reverse: true,
+    transition: true,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+  });
+
+  // Get all slide cards, images, and descriptions
+  const slideCards = document.querySelectorAll(".slide-card");
+  const images = document.querySelectorAll("#image");
+  const descriptions = document.querySelectorAll(".desc");
+
+  // Add event listeners to each slide card
+  slideCards.forEach((card, index) => {
+    card.addEventListener("mouseover", () => {
+      // Remove active class from all slide cards, images, and descriptions
+      slideCards.forEach((card) => {
+        card.classList.remove("slide-card-active");
+      });
+      images.forEach((image) => {
+        image.classList.remove("slide-card-active");
+      });
+      descriptions.forEach((desc) => {
+        desc.classList.remove("desc-active");
+      });
+
+      // Add active class to the hovered slide card, image, and description
+      card.classList.add("slide-card-active");
+      images[index].classList.add("slide-card-active");
+      descriptions[index].classList.add("desc-active");
+    });
+  });
+
   return {
     init: init,
   };

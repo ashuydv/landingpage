@@ -374,7 +374,6 @@ html {
 }
 h1.dsp,
 .h1-dsp {
-	font-family: clash-display, helvetica;
 	font-size: 120px;
 	font-weight: 500;
 	line-height: 106px;
@@ -403,7 +402,6 @@ h1.dsp,
 }
 h1,
 .h1 {
-	font-family: clash-display, helvetica;
 	font-size: 94px;
 	font-weight: 500;
 	line-height: 96px;
@@ -432,7 +430,6 @@ h1,
 }
 h2,
 .h2 {
-	font-family: clash-display, helvetica;
 	font-size: 72px;
 	font-weight: 500;
 	line-height: 76px;
@@ -461,7 +458,6 @@ h2,
 }
 h3,
 .h3 {
-	font-family: clash-display, helvetica;
 	font-size: 48px;
 	font-weight: 500;
 	line-height: 44px;
@@ -557,7 +553,6 @@ p {
 	}
 }
 .eyebrow {
-	font-family: clash-display, helvetica;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -2982,7 +2977,7 @@ html,
 	margin-top: 3.5rem;
 	margin-bottom: 2rem;
 	max-width: 800px;
-	font-family: clash-display, helvetica;
+
 	font-size: 48px;
 	font-weight: 500;
 	line-height: 44px;
@@ -3855,4 +3850,31 @@ html,
 	.sm-mobile\:flex-wrap {
 		flex-wrap: wrap;
 	}
+}
+
+/* sphere-animation */
+
+.animation-wrapper {
+	width: 80%;
+	margin: auto;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+#inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.kickstart-bg {
+	background-attachment: fixed;
+	background-image: url('../images/hero-illustration.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
 }
