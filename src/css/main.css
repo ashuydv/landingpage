@@ -1,3 +1,83 @@
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-Regular.otf") format("otf"),
+		url("../fonts/EuclidCircularA-Regular.ttf") format("ttf");
+	font-weight: normal;
+}
+
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-RegularItalic.otf") format("otf"),
+		url("../fonts/EuclidCircularA-RegularItalic.ttf") format("ttf");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-Bold.otf") format("otf"),
+		url("../fonts/EuclidCircularA-Bold.ttf") format("ttf");
+	font-weight: bold;
+}
+
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-BoldItalic.otf") format("otf"),
+		url("../fonts/EuclidCircularA-BoldItalic.ttf") format("ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-Light.otf") format("otf"),
+		url("../fonts/EuclidCircularA-Light.ttf") format("ttf");
+	font-weight: 300;
+}
+
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-LightItalic.otf") format("otf"),
+		url("../fonts/EuclidCircularA-LightItalic.ttf") format("ttf");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-Medium.otf") format("otf"),
+		url("../fonts/EuclidCircularA-Medium.ttf") format("ttf");
+	font-weight: 500;
+}
+
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-MediumItalic.otf") format("otf"),
+		url("../fonts/EuclidCircularA-MediumItalic.ttf") format("ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-Semibold.otf") format("otf"),
+		url("../fonts/EuclidCircularA-Semibold.ttf") format("ttf");
+	font-weight: 600;
+}
+
+
+@font-face {
+	font-family: "EuclidCircularA";
+	src: url("../fonts/EuclidCircularA-SemiboldItalic.otf") format("otf"),
+		url("../fonts/EuclidCircularA-SemiboldItalic.ttf") format("ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
 *,
 :before,
 :after {
@@ -11,15 +91,12 @@
 	--tw-content: "";
 }
 html {
+	font-family: "EuclidCircularA", sans-serif !important; 
 	line-height: 1.5;
 	-webkit-text-size-adjust: 100%;
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
-	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-		Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
-		"Noto Color Emoji";
 	font-feature-settings: normal;
 }
 body {
@@ -56,8 +133,6 @@ code,
 kbd,
 samp,
 pre {
-	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-		Liberation Mono, Courier New, monospace;
 	font-size: 1em;
 }
 small {
@@ -86,7 +161,6 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: inherit;
 	font-size: 100%;
 	font-weight: inherit;
 	line-height: inherit;
@@ -299,70 +373,7 @@ body {
 	--tw-backdrop-saturate: ;
 	--tw-backdrop-sepia: ;
 }
-/* @font-face {
-	font-family: clash-display;
-	src: url(../fonts/ClashDisplay-Medium.woff2) format("woff2"),
-		url(../fonts/ClashDisplay-Medium.woff) format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: clash-display;
-	src: url(../fonts/ClashDisplay-Semibold.woff2) format("woff2"),
-		url(../fonts/ClashDisplay-Semibold.woff) format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: shopify-sans;
-	src: url(../fonts/ShopifySans-Regular.woff2) format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: shopify-sans;
-	src: url(../fonts/ShopifySans-Regular-Italic.woff2) format("woff2");
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: fira;
-	src: url(../fonts/FiraCode-Regular.woff2) format("woff2"),
-		url(../fonts/FiraCode-Regular.woff) format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: fira;
-	src: url(../fonts/FiraCode-Medium.woff2) format("woff2"),
-		url(../fonts/FiraCode-Medium.woff) format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: fira;
-	src: url(../fonts/FiraCode-SemiBold.woff2) format("woff2"),
-		url(../fonts/FiraCode-SemiBold.woff) format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: fira;
-	src: url(../fonts/FiraCode-Bold.woff2) format("woff2"),
-		url(../fonts/FiraCode-Bold.woff) format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-} */
 html {
-	font-family: shopify-sans, helvetica;
 	font-size: 18px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -374,11 +385,13 @@ html {
 }
 h1.dsp,
 .h1-dsp {
-	font-size: 120px;
+	font-family: "EuclidCircularA", sans-serif !important;
+	font-size: 72px;
 	font-weight: 500;
-	line-height: 106px;
+	line-height: normal;
 	letter-spacing: 0em;
 }
+
 @media (max-width: 1199px) {
 	h1.dsp,
 	.h1-dsp {
@@ -479,7 +492,6 @@ h3,
 }
 h4,
 .h4 {
-	font-family: roc-grotesk-wide, clash-display, helvetica;
 	font-size: 22px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -520,8 +532,8 @@ p {
 	}
 }
 .paragraph-major {
-	font-size: 22px;
-	line-height: 32px;
+	font-size: 20px;
+	line-height: 30px;
 }
 @media (max-width: 1199px) {
 	.paragraph-major {
@@ -560,19 +572,16 @@ p {
 	letter-spacing: 0em;
 }
 .paragraph-fira-bold {
-	font-family: fira, helvetica;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1.5;
 }
 .paragraph-fira-semibold {
-	font-family: fira, helvetica;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.5;
 }
 .paragraph-fira {
-	font-family: fira, helvetica;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -773,7 +782,7 @@ button.btn {
 	align-items: center;
 	justify-content: center;
 	padding: 1rem 2.25rem;
-	font-family: fira, helvetica;
+
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1.5;
@@ -2351,15 +2360,7 @@ button.btn {
 .text-center {
 	text-align: center;
 }
-.font-inter {
-	font-family: inter, helvetica;
-}
-.font-fira {
-	font-family: fira, helvetica;
-}
-.font-shopify {
-	font-family: shopify-sans, helvetica;
-}
+
 .text-xxs {
 	font-size: 12px;
 }
@@ -3007,7 +3008,6 @@ html,
 	margin-top: 2.5rem;
 	margin-bottom: 3rem;
 	max-width: 800px;
-	font-family: roc-grotesk-wide, clash-display, helvetica;
 	font-size: 22px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -3063,7 +3063,7 @@ html,
 	margin-top: 2.75rem;
 	margin-bottom: 2.75rem;
 	max-width: 800px;
-	font-family: fira, helvetica;
+
 	font-weight: 700;
 }
 @media (max-width: 1079px) {
@@ -3854,6 +3854,18 @@ html,
 
 /* sphere-animation */
 
+.sphere-blur {
+	width: 1200px;
+	height: 1200px;
+	border-radius: 50%;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #0e0a3c;
+	filter: blur(40px) brightness(0.5);
+}
+
 .animation-wrapper {
 	width: 80%;
 	margin: auto;
@@ -3861,7 +3873,7 @@ html,
 	top: 90%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 0;
+	z-index: 10;
 }
 
 #inner {
@@ -3872,7 +3884,7 @@ html,
 
 .kickstart-bg {
 	background-attachment: fixed;
-	background-image: url('../images/hero-illustration.svg');
+	background-image: url("../images/hero-illustration.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

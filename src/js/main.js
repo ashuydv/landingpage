@@ -1,4 +1,40 @@
+var header = document.querySelector(".header");
+var headerHeight = header.offsetHeight;
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > headerHeight) {
+    header.classList.add("header--dark");
+  } else {
+    header.classList.remove("header--dark");
+  }
+});
+
 var fullAnimation = (function () {
+  //hero animation
+  /*
+  var textArr = [
+    "Tokenomics",
+    "Decentralization",
+    "Blockchain Technology",
+    "Cryptocurrency",
+  ];
+  var currentIndex = 0;
+
+  function changeText() {
+    var typingText = document.getElementById("typing-text");
+    typingText.classList.add("fade-out");
+
+    setTimeout(function () {
+      typingText.innerHTML = textArr[currentIndex];
+      typingText.classList.remove("fade-out");
+      currentIndex = (currentIndex + 1) % textArr.length;
+    }, 500); // Adjust the delay time as needed
+  }
+
+  changeText();
+  setInterval(changeText, 3000);
+  */
+
   var bigDarkRectangle = anime
     .timeline({
       targets: ".hero-figure-box-05",
@@ -8,14 +44,14 @@ var fullAnimation = (function () {
       },
     })
     .add({
-      duration: 100,
+      duration: 200,
       easing: "easeInOutExpo",
       scaleX: [0.05, 0.05],
       scaleY: [0, 1],
       perspective: "500px",
     })
     .add({
-      duration: 100,
+      duration: 200,
       easing: "easeInOutExpo",
       scaleX: 1,
     })
@@ -31,14 +67,14 @@ var fullAnimation = (function () {
       targets: ".hero-figure-box-06, .hero-figure-box-07",
     })
     .add({
-      duration: 100,
+      duration: 200,
       easing: "easeInOutExpo",
       scaleX: [0.05, 0.05],
       scaleY: [0, 1],
       perspective: "500px",
     })
     .add({
-      duration: 100,
+      duration: 200,
       easing: "easeInOutExpo",
       scaleX: 1,
     })
@@ -75,10 +111,8 @@ var fullAnimation = (function () {
       reverseAnimation();
       setTimeout(function () {
         restartAnimation();
-      }, bigDarkRectangle.duration);
-    }, bigDarkRectangle.duration +
-      smallDarkRectangles.duration +
-      colouredRectangles.duration);
+      }, 1000);
+    }, 3000);
   }
 
   function restartAnimation() {
@@ -191,39 +225,73 @@ var fullAnimation = (function () {
     init();
   })();
 
+  /*
   VanillaTilt.init(document.querySelectorAll("#inner-box"), {
-    max: 5,
+    max: 0,
     speed: 1000,
     glare: true,
-    "max-glare": 0.5,
+    "max-glare": .1,
     reverse: true,
     transition: true,
     easing: "cubic-bezier(.03,.98,.52,.99)",
   });
 
-  // Get all slide cards, images, and descriptions
-  const slideCards = document.querySelectorAll(".slide-card");
-  const images = document.querySelectorAll("#image");
-  const descriptions = document.querySelectorAll(".desc");
+  */
 
-  // Add event listeners to each slide card
+  const cards = document.querySelectorAll(".card-bg");
+  const movingPatches = document.querySelectorAll(".inner-patch-moving");
+
+  cards.forEach((card, index) => {
+    const movingPatch = movingPatches[index];
+
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      movingPatch.style.left = `${mouseX}px`;
+      movingPatch.style.top = `${mouseY}px`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+      movingPatch.style.left = "50%";
+      movingPatch.style.top = "50%";
+    });
+  });
+
+  // Slide card animation
+
+  const slideCards = document.querySelectorAll(".slide-card");
+  const bars = document.querySelectorAll(".bar");
+  const images = [
+    "https://cdn.shopify.com/s/files/1/0611/9273/2728/files/illustration-blockchain-components.png",
+    "https://cdn.shopify.com/s/files/1/0611/9273/2728/files/shopify-payments_805f53f7-21cf-43d4-8fe9-4c3c00ed99e1.png?v=1684752233",
+    "https://cdn.shopify.com/s/files/1/0611/9273/2728/files/illustration-gates-api.png?v=1675285927",
+    "http://dummyimage.com/600x400/000/fff",
+    "http://dummyimage.com/601x400/000/fff",
+  ];
+  const imageSection = document.querySelector(".image-section");
+
+  // Set the initial state for the first slide card and first image
+  slideCards[0].classList.add("slide-card-active");
+  bars[0].classList.add("bg-purple-700");
+  imageSection.style.backgroundImage = `url(${images[0]})`;
+
   slideCards.forEach((card, index) => {
     card.addEventListener("mouseover", () => {
-      // Remove active class from all slide cards, images, and descriptions
       slideCards.forEach((card) => {
         card.classList.remove("slide-card-active");
       });
-      images.forEach((image) => {
-        image.classList.remove("slide-card-active");
-      });
-      descriptions.forEach((desc) => {
-        desc.classList.remove("desc-active");
+      bars.forEach((bar) => {
+        bar.classList.remove("bg-purple-700");
       });
 
-      // Add active class to the hovered slide card, image, and description
       card.classList.add("slide-card-active");
-      images[index].classList.add("slide-card-active");
-      descriptions[index].classList.add("desc-active");
+      bars[index].classList.add("bg-purple-700");
+
+      // Change the image source of the associated image element
+      imageSection.style.backgroundImage = `url(${images[index]})`;
+      document.querySelector("#image").src = images[index];
     });
   });
 
