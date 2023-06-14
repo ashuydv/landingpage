@@ -12,37 +12,52 @@
 	<link rel="stylesheet" href="src/css/main.css">
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
-	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 </head>
 
 <body class="is-boxed has-animations">
-	<div class="min-h-screen max-w-screen text-gray-90 text-base mobile:text-sm"><!--$-->
+	<div class="min-h-screen text-gray-90 text-base mobile:text-sm"><!--$-->
 		<header class="fixed w-full top-0 z-30 transition-colors duration-500 text-black header">
-			<div class="h-16 container flex items-center justify-between">
+			<div class="h-16 container px-12 flex items-center justify-between px-1">
 				<div class="flex items-center flex-grow">
-					<button class="text-current mr-8 cursor-pointer min-w-[20%] tablet:min-w-min"></button>
+					<button class="text-current mr-8 cursor-pointer min-w-[20%] tablet:min-w-min">
+						<img src="src/images/logo.svg" alt="">
+					</button>
 					<div class="mobile:hidden flex-grow text-center tablet:text-left">
-						<a class="paragraph-fira-semibold uppercase mr-6 animated-link animated-link__to-visible"
+						<a class="paragraph-fira mr-6 animated-link animated-link__to-visible"
 							href="/#features">Features</a>
-						<a class="paragraph-fira-semibold uppercase mr-6 animated-link animated-link__to-visible"
-							target="_self">Case Studies</a>
-						<a
-							class="paragraph-fira-semibold uppercase mr-6 animated-link animated-link__to-visible">Documentation</a>
+						<a class="paragraph-fira mr-6 animated-link animated-link__to-visible" href="#">Earn</a>
+						<a class="paragraph-fira mr-6 animated-link animated-link__to-visible"
+							href="https://t.me/drypto_network" target="_blank">Join the
+							community</a>
 					</div>
 				</div>
 				<div class="flex items-center justify-end tablet:justify-between min-w-[20%] tablet:min-w-min">
-
+					<ul class="flex items-center justify-end">
+						<li>
+							<a class="paragraph-fira mr-6 animated-link animated-link__to-visible" href="#">
+								<i class="fa-brands fa-discord"></i>
+							</a>
+						</li>
+						<li>
+							<a class="paragraph-fira mr-6 animated-link animated-link__to-visible" href="#">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div
 				class="hidden tablet:block fixed top-[64px] w-full right-0 bottom-0 bg-black text-white max-w-[320px] border-t border-[#3D3F40] transition-transform transform duration-500 translate-x-full">
 				<div class="flex flex-col justify-between h-full px-6 py-8">
 					<div class="flex flex-col items-start gap-10">
-						<a class="paragraph-fira-semibold uppercase" href="/#features">Features</a>
-						<a class="paragraph-fira-semibold uppercase" href="/case-studies">Case Studies</a>
-						<a class="paragraph-fira-semibold uppercase" target="_blank">Documentation</a>
+						<a class="paragraph-fira" href="/#features">Features</a>
+						<a class="paragraph-fira" href="/case-studies">Case Studies</a>
+						<a class="paragraph-fira" target="_blank">Documentation</a>
 					</div>
 					<div class="flex flex-row">
 						<a target="_blank" class="h-5 mr-4 svg-height-full">Discord Icon</a>
@@ -59,7 +74,7 @@
 					<div class="image-background">
 						<img src="/src/images/bg-illustration.png" alt="">
 					</div>
-					<div class="container relative">
+					<div class="container px-12 relative">
 						<div class="relative text-black pb-[150px] mobile:pb-[60px] hero__content">
 							<div class="hero__content-block invisible"
 								style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
@@ -69,10 +84,9 @@
 								</h1> -->
 								<div class="h1-dsp mb-6 text-white mobile:opacity-0 mobile:absolute" aria-hidden="true">
 									Decentralized
-									<br> Intelligence Gathering
+									<br> Intelligence Gathering for
 									<div class="flex items-center">
-										for
-										<span class="ml-2" id="anim"></span><span id="shuffle"></span>
+										<span id="anim"></span><span id="shuffle"></span>
 									</div>
 								</div>
 							</div>
@@ -84,12 +98,19 @@
 							<div class="flex flex-wrap items-center hero__content-block invisible"
 								style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
 								<a target="_blank" href="https://calendly.com/drypto_/demo" rel="noreferrer"
-									class="btn btn--primary mr-8 mobile:mr-0 mobile:mb-6" id="calendly-button">Read
-									documentation</a>
-								<p class="paragraph-fira-semibold mobile:w-full">
-									<a class="group relative undefined" tabindex="0" id="hero-features">
-										<span class="relative mr-3 pointer-events-none text-gray-50 font-semibold">
-											Dive into features
+									class="btn btn--primary mr-8 mobile:mr-0 mobile:mb-6" id="calendly-button">Book a
+									Free Demo</a>
+								<p class="mobile:w-full">
+									<a class="btn btn--default flex items-center justify-evenly text-gray-100"
+										tabindex="0" id="hero-features">
+										<span class="icon">
+											<img src="src/images/docs.svg" alt="">
+										</span>
+										<span class="mx-2">
+											Read Documentation
+										</span>
+										<span>
+											<i class="fa-solid fa-arrow-right-long"></i>
 										</span>
 									</a>
 								</p>
@@ -124,22 +145,19 @@
 					<div class="relative pb-4">
 						<div class="absolute bottom-0 left-0 w-full h-full">
 						</div>
-						<div class="relative container">
-							<div class="grid grid-cols-12 gap-4" id="container">
+						<div class="relative container px-12">
+							<div class="grid grid-cols-12 gap-4" id="container px-12">
 								<div id="inner" class="col-span-4 tablet:col-span-12 hero__content-block">
 									<div class="h-full flex flex-col tablet:flex-row mobile:flex-col" id="inner-box">
 										<div
 											class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
-											<video
-												src="https://cdn.shopify.com/videos/c/o/v/3ec729df265b48cf8bc2e6f6d68236f2.mp4"
-												poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/card-1.png?v=1675285925"
-												muted="" playsinline=""
-												class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]"></video>
+											<img src="src/images/panel.png" alt="Panel"
+												class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]">
 										</div>
 										<div
 											class="bg-[#f3c1ef] p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6 card-bg card-1">
 											<div class="inner-patch-moving"></div>
-											<h2 class="h4 mb-3">Segment buyers with NFT collections</h2>
+											<h2 class="h4 mb-3 capitalize">Panel of Web3 native audience</h2>
 											<p class="paragraph-minor">Distribute NFTs to different
 												buyer segments that you can target with different perks
 												– on and off Shopify, online and in real life.</p>
@@ -150,16 +168,13 @@
 									<div class="h-full flex flex-col tablet:flex-row mobile:flex-col" id="inner-box">
 										<div
 											class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
-											<video
-												src="https://cdn.shopify.com/videos/c/o/v/3ec729df265b48cf8bc2e6f6d68236f2.mp4"
-												poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/card-1.png?v=1675285925"
-												muted="" playsinline=""
-												class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]"></video>
+											<img src="src/images/privacy.png"
+												class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]">
 										</div>
 										<div
 											class="bg-[#f3c1ef] p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6 card-bg card-2">
 											<div class="inner-patch-moving"></div>
-											<h2 class="h4 mb-3">Segment buyers with NFT collections</h2>
+											<h2 class="h4 mb-3 capitalize">Respondent anonymity & Data privacy</h2>
 											<p class="paragraph-minor">Distribute NFTs to different
 												buyer segments that you can target with different perks
 												– on and off Shopify, online and in real life.</p>
@@ -170,16 +185,13 @@
 									<div class="h-full flex flex-col tablet:flex-row mobile:flex-col" id="inner-box">
 										<div
 											class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
-											<video
-												src="https://cdn.shopify.com/videos/c/o/v/3ec729df265b48cf8bc2e6f6d68236f2.mp4"
-												poster="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/card-1.png?v=1675285925"
-												muted="" playsinline=""
-												class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]"></video>
+											<img src="src/images/transparency.png"
+												class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]">
 										</div>
 										<div
 											class="bg-[#f3c1ef] p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6 card-bg card-3">
 											<div class="inner-patch-moving"></div>
-											<h2 class="h4 mb-3">Segment buyers with NFT collections</h2>
+											<h2 class="h4 mb-3 capitalize">Easy, fair & transparent incentivisation</h2>
 											<p class="paragraph-minor">Distribute NFTs to different
 												buyer segments that you can target with different perks
 												– on and off Shopify, online and in real life.</p>
@@ -192,7 +204,7 @@
 				</div>
 			</div>
 			<section class="py-28 laptop:py-[80px] bg-black text-white tablet:pb-12" id="features">
-				<div class="container">
+				<div class="container px-12">
 					<h2 class="mb-16 text-5xl font-medium flex">
 						We give you the
 						<span class="ml-3" id="gradient-text">edge
@@ -210,59 +222,47 @@
 									</div>
 									<div
 										class="bg-gradient-to-t from-gray-900 to-gray-800 px-5 py-3 rounded-[10px] desc">
-										<h2 style="font-size: 26px;">Lorem, ipsum.</h2>
-										<p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur
-											adipisicing elit. Sint
-											voluptas exercitationem molestiae? Cumque reiciendis
-											aliquid, minus eligendi laborum quas velit.</p>
+										<h2 style="font-size: 26px;">Beta feedback</h2>
+										<p class="leading-relaxed mb-3">Put your product in hands of real users before
+											launching. Ensure the diversity with access to multiple domain experts,
+											geographies, web3 age and levels of tech savviness in your audience.</p>
 									</div>
 								</div>
 								<div class="slide-card px-1">
 									<div class="bg-gray-500 w-40 h-1.5 rounded my-2 w-full mb-4 bar"></div>
 									<div class="bg-gradient-to-t from-gray-900 to-gray-800 px-5 py-3 rounded-[10px] desc"
 										id="desc">
-										<h2 style="font-size: 26px;">Lorem, ipsum.</h2>
-										<p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur
-											adipisicing elit.
-											Sint
-											voluptas exercitationem molestiae? Cumque reiciendis
-											aliquid, minus eligendi laborum quas velit.</p>
+										<h2 style="font-size: 26px;">Pre ICO checks</h2>
+										<p class="leading-relaxed mb-3">Understand the market sentiment before token
+											launch. Optimize for supply, perfect timing & markets.</p>
 									</div>
 								</div>
 								<div class="slide-card px-1">
 									<div class="bg-gray-500 w-40 h-1.5 rounded my-2 w-full mb-4 bar"></div>
 									<div class="bg-gradient-to-t from-gray-900 to-gray-800 px-5 py-3 rounded-[10px] desc"
 										id="desc">
-										<h2 style="font-size: 26px;">Lorem, ipsum.</h2>
-										<p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur
-											adipisicing elit.
-											Sint
-											voluptas exercitationem molestiae? Cumque reiciendis
-											aliquid, minus eligendi laborum quas velit.</p>
+										<h2 style="font-size: 26px;">Proof of feedback</h2>
+										<p class="leading-relaxed mb-3">Enhance your Tokenomics & Whitepaper
+											understanding & establish credibility with Proof of feedback</p>
 									</div>
 								</div>
 								<div class="slide-card px-1">
 									<div class="bg-gray-500 w-40 h-1.5 rounded my-2 w-full mb-4 bar"></div>
 									<div class="bg-gradient-to-t from-gray-900 to-gray-800 px-5 py-3 rounded-[10px] desc"
 										id="desc">
-										<h2 style="font-size: 26px;">Lorem, ipsum.</h2>
-										<p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur
-											adipisicing elit.
-											Sint
-											voluptas exercitationem molestiae? Cumque reiciendis
-											aliquid, minus eligendi laborum quas velit.</p>
+										<h2 style="font-size: 26px;">Laser sharp marketing</h2>
+										<p class="leading-relaxed mb-3">Find the right insights on what your audience
+											likes & how to best deliver your product. Increase ROI on marketing efforts
+											with focused testing & feedback</p>
 									</div>
 								</div>
 								<div class="slide-card px-1">
 									<div class="bg-gray-500 w-40 h-1.5 rounded my-2 w-full mb-4 bar"></div>
 									<div class="bg-gradient-to-t from-gray-900 to-gray-800 px-5 py-3 rounded-[10px] desc"
 										id="desc">
-										<h2 style="font-size: 26px;">Lorem, ipsum.</h2>
-										<p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur
-											adipisicing elit.
-											Sint
-											voluptas exercitationem molestiae? Cumque reiciendis
-											aliquid, minus eligendi laborum quas velit.</p>
+										<h2 style="font-size: 26px;">Web3 innovation research</h2>
+										<p class="leading-relaxed mb-3">Use crowdsourcing to test new tech innovations,
+											find whitespaces for new use cases</p>
 									</div>
 								</div>
 							</div>
@@ -271,63 +271,238 @@
 				</div>
 			</section>
 			<section class="relative bg-black text-white overflow-hidden">
-				<div class="px-16 py-28 laptop:py-[80px] relative pointer-events-none tablet:pointer-events-auto
+				<div class="px-12 py-28 laptop:py-[80px] relative pointer-events-none tablet:pointer-events-auto
 						kickstart-bg
 					">
-					<h2 class="mb-16 text-5xl font-medium flex">
+					<h2 class="mb-12 text-5xl font-medium flex">
 						Top notch
 						<span class="ml-3" id="gradient-text">Features
 						</span>
 					</h2>
-					<p class="mb-14 mobile:mb-10 max-w-[55ch] z-10">From documentation and code snippets to
+					<!-- <p class="mb-14 mobile:mb-10 max-w-[55ch] z-10">From documentation and code snippets to
 						partner communities and example apps, explore essential resources to kickstart
-						your build.</p>
+						your build.</p> -->
 					<ul class="z-10">
-						<li class="overflow-hidden flex items-center justify-between mobile:block px-5 py-10 mobile:py-10
+						<li class="overflow-hidden mobile:block px-12 py-10 mobile:py-10
 							h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10
 								mb-4
 							">
-							<div class="flex mobile:block pt-2 mobile:pt-0">
-								<div class="resource-list-item__pop inline-block invisible"
-									style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
-									<div class="mr-5 w-16 pointer-events-auto mobile:pb-6"
-										style="grid-area: 1 / 1 / -1 / -1;">
-										<img src="https://cdn.shopify.com/s/files/1/0611/9273/2728/files/Documentation.png?v=1675718610"
-											width="58px" height="58px">
+							<div class="flex items-center justify-between mobile:block pt-2 mobile:pt-0">
+								<div class="flex items-center justify-around">
+									<div class="mr-5 w-16 mobile:pb-6" style="grid-area: 1 / 1 / -1 / -1;">
+										<img src="src/images/feature-1.svg" width="58px" height="58px">
+									</div>
+									<div>
+										<h3 class="feature-heading">Decentralised & encrypted for zero data leaks</h3>
 									</div>
 								</div>
-								<h3 class="h4 leading-[1.4] tablet:leading-normal mobile:leading-normal w-64 tablet:pb-8 tablet:pr-10 tablet:text-[20px] mobile:pb-4 mobile:px-0 mobile:w-auto flex-shrink-0 resource-list-item__rise invisible"
-									style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
-									Blockchain Documentation</h3>
-							</div>
-							<div class="flex flex-grow justify-between tablet:block resource-list-item__rise invisible "
-								style="translate: none; rotate: none; scale: none; opacity: 1; visibility: visible;">
-								<div class="paragraph-dark-background w-full mx-auto px-10 tablet:px-0 tablet:pb-6">
-									<div class="max-w-[45ch] mobile:max-w-[50ch]">Whether you’re an app
-										or in-house developer – all you need to know about our
-										components and essential APIs.</div>
-								</div>
-								<div class="w-48 tablet:w-auto flex-shrink-0 paragraph-fira-semibold"><a
-										class="hover:text-gray-200 hover:underline transition pointer-events-auto cursor-pointer"
+								<div>
+									<a class="hover:text-gray-200 hover:underline paragraph-fira-semibold transition pointer-events-auto cursor-pointer"
 										id="resources-documentation-link">
-										Read Documentation
-									</a></div>
+										Read More
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="overflow-hidden mobile:block px-12 py-10 mobile:py-10
+						h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10
+							mb-4
+						">
+							<div class="flex items-center justify-between mobile:block pt-2 mobile:pt-0">
+								<div class="flex items-center justify-around">
+									<div class="mr-5 w-16 mobile:pb-6" style="grid-area: 1 / 1 / -1 / -1;">
+										<img src="src/images/feature-2.svg" width="58px" height="58px">
+									</div>
+									<div>
+										<h3 class="feature-heading">AI enabled survey creation</h3>
+									</div>
+								</div>
+								<div>
+									<a class="hover:text-gray-200 hover:underline paragraph-fira-semibold transition pointer-events-auto cursor-pointer"
+										id="resources-documentation-link">
+										Read More
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="overflow-hidden mobile:block px-12 py-10 mobile:py-10
+					h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10
+						mb-4
+					">
+							<div class="flex items-center justify-between mobile:block pt-2 mobile:pt-0">
+								<div class="flex items-center justify-around">
+									<div class="mr-5 w-16 mobile:pb-6" style="grid-area: 1 / 1 / -1 / -1;">
+										<img src="src/images/feature-3.svg" width="58px" height="58px">
+									</div>
+									<div>
+										<h3 class="feature-heading">Single click white labelling</h3>
+									</div>
+								</div>
+								<div>
+									<a class="hover:text-gray-200 hover:underline paragraph-fira-semibold transition pointer-events-auto cursor-pointer"
+										id="resources-documentation-link">
+										Read More
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="overflow-hidden mobile:block px-12 py-10 mobile:py-10
+				h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10
+					mb-4
+				">
+							<div class="flex items-center justify-between mobile:block pt-2 mobile:pt-0">
+								<div class="flex items-center justify-around">
+									<div class="mr-5 w-16 mobile:pb-6" style="grid-area: 1 / 1 / -1 / -1;">
+										<img src="src/images/feature-4.svg" width="58px" height="58px">
+									</div>
+									<div>
+										<h3 class="feature-heading">Plugins for complete automation</h3>
+									</div>
+								</div>
+								<div>
+									<a class="hover:text-gray-200 hover:underline paragraph-fira-semibold transition pointer-events-auto cursor-pointer"
+										id="resources-documentation-link">
+										Read More
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="overflow-hidden mobile:block px-12 py-10 mobile:py-10
+			h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10
+				mb-4
+			">
+							<div class="flex items-center justify-between mobile:block pt-2 mobile:pt-0">
+								<div class="flex items-center justify-around">
+									<div class="mr-5 w-16 mobile:pb-6" style="grid-area: 1 / 1 / -1 / -1;">
+										<img src="src/images/feature-5.svg" width="58px" height="58px">
+									</div>
+									<div>
+										<h3 class="feature-heading">Validation checks for real users</h3>
+									</div>
+								</div>
+								<div>
+									<a class="hover:text-gray-200 hover:underline paragraph-fira-semibold transition pointer-events-auto cursor-pointer"
+										id="resources-documentation-link">
+										Read More
+									</a>
+								</div>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</section>
-			<div class="pt-28 laptop:pt-20 bg-black text-white">
-				<div>
-					<div class="container max-w-3xl text-center">
-						<h2 class="mb-10 text-5xl font-medium flex items-center justify-between flex-col w-full">
-							How do you want to leverage your
-							<span class="ml-3 my-2" id="gradient-text">community?
+			<section class="relative bg-black" id="blogs">
+				<div class="relative pb-4 p-32">
+					<div class="flex items-start justify-between w-full -mx-2">
+						<h2 class="mb-12 text-5xl text-white font-medium flex">
+							Featured
+							<span class="ml-3" id="gradient-text">Content
 							</span>
 						</h2>
-						<p class="leading-relaxed mb-10">And what about rest of web3 native audience?</p>
-						<div class=""><a class="btn btn--primary-dark tablet:mb-6" target="_blank">Read
-								documentation<div class="w-2.5 ml-3 svg-width-full"></div></a></div>
+						<!-- <div class="slide-arrows flex items-center justify-around">
+							<div class="prev">
+								<i class="fa-solid fa-arrow-left text-white"></i>
+							</div>
+							<div class="next">
+								<i class="fa-solid fa-arrow-right text-white"></i>
+							</div>
+						</div> -->
+					</div>
+					<div class="gap-6 mx-auto flex items-center justify-center featured-container px-0">
+						<div id="inner" class="tablet:col-span-12 hero__content-block px-4">
+							<div class="h-full flex flex-col tablet:flex-row mobile:flex-col" id="inner-box">
+								<div
+									class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
+									<img src="src/images/panel.png"
+										class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]">
+								</div>
+								<div
+									class="bg-[#f3c1ef] p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6 card-bg card-1">
+									<div class="inner-patch-moving"></div>
+									<h2 class="h4 mb-3 capitalize pr-12">Why use decentralised intelligence gathering?
+									</h2>
+									<p class="paragraph-minor pr-12">A deep dive into the problems with traditional ways of
+										user research & crowd sourcing of information. Exploring how data gathering
+										works in web2 with centralised data repositories & why it doesn’t work for web3.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="inner" class="tablet:col-span-12 hero__content-block px-4">
+							<div class="h-full flex flex-col tablet:flex-row mobile:flex-col" id="inner-box">
+								<div
+									class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
+									<img src="src/images/transparency.png"
+										class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]">
+								</div>
+								<div
+									class="bg-[#f3c1ef] p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6 card-bg card-2">
+									<div class="inner-patch-moving"></div>
+									<h2 class="h4 mb-3 capitalize pr-12">Transparency in incentivization & How to
+										optimise cost?</h2>
+									<p class="paragraph-minor">The correlation between survey length, complexity,
+										information criticality, and optimal incentivization marks, as well as the
+										transparency of minimum incentive calculation and maintaining incentivization
+										transparency, will be explored.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- <div id="inner" class="tablet:col-span-12 hero__content-block px-4">
+							<div class="h-full flex flex-col tablet:flex-row mobile:flex-col" id="inner-box">
+								<div
+									class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
+									<img src="src/images/panel.png"
+										class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]">
+								</div>
+								<div
+									class="bg-[#f3c1ef] p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6 card-bg card-2">
+									<div class="inner-patch-moving"></div>
+									<h2 class="h4 mb-3 capitalize pr-12">How we maintain privacy and sanctity of your
+										respondent’s data?</h2>
+									<p class="paragraph-minor">
+										Discuss technical aspect of how data is secured via decentralization & privacy
+										is maintained by gated access NFTS and end to end encryptions.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="inner" class="tablet:col-span-12 hero__content-block px-4">
+							<div class="h-full flex flex-col tablet:flex-row mobile:flex-col" id="inner-box">
+								<div
+									class="padding-aspect padding-aspect--video w-full tablet:w-1/2 mobile:w-full mobile:padding-aspect--6/2">
+									<img src="src/images/panel.png"
+										class="rounded-[10px_10px_0_0] tablet:rounded-[10px_0_0_10px] mobile:rounded-[10px_10px_0_0]">
+								</div>
+								<div
+									class="bg-[#f3c1ef] p-7 tablet:p-5 rounded-[0_0_10px_10px] tablet:rounded-[0_10px_10px_0] tablet:flex tablet:flex-col tablet:justify-center mobile:rounded-[0_0_10px_10px] flex-grow w-full tablet:w-1/2 mobile:w-full mobile:p-6 card-bg card-1">
+									<div class="inner-patch-moving"></div>
+									<h2 class="h4 mb-3 capitalize pr-12">Why use decentralised intelligence gathering?
+									</h2>
+									<p class="paragraph-minor">A deep dive into the problems with traditional ways of
+										user research & crowd sourcing of information. Exploring how data gathering
+										works in web2 with centralised data repositories & why it doesn’t work for web3.
+									</p>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<div class="pt-28 laptop:pt-20 bg-black text-white">
+				<div>
+					<div class="container px-12 max-w-3xl text-center">
+						<h2 class="mb-10 text-5xl font-medium flex items-center justify-between flex-col w-full">
+							How do you want to leverage
+							<span class="ml-3 my-2" id="gradient-text"> your community
+							</span>
+						</h2>
+						<p class="leading-relaxed mb-10 text-center">And what about rest of web3 native audience?</p>
+						<div class="flex items-center justify-around">
+							<a class="btn btn--primary text-black tablet:mb-6" target="_blank">
+								Book a free demo !
+							</a>
+						</div>
 					</div>
 				</div>
 				<div>
@@ -393,23 +568,40 @@
 				</div>
 			</div>
 		</main><!--$-->
-		<footer class="text-gray-400 bg-gray-900 body-font">
-			<div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+		<footer class="text-gray-400 hover:text-gray-100 bg-black body-font">
+			<div class="container px-12 px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
 				<a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-					<span class="ml-3 text-xl">Drypto_</span>
+					<span class="ml-3 text-xl">
+						<img src="src/images/logo.svg" alt="">
+					</span>
 				</a>
 				<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-					<a class="text-gray-400 hover:text-gray-200 cursor-pointer">
-						Links
-					</a>
+					<div class="flex items-center justify-end tablet:justify-between min-w-[20%] tablet:min-w-min">
+						<ul class="flex items-center justify-end">
+							<li>
+								<a class="paragraph-fira mr-6 animated-link animated-link__to-visible" href="#">
+									<i class="fa-brands fa-discord"></i>
+								</a>
+							</li>
+							<li>
+								<a class="paragraph-fira mr-6 animated-link animated-link__to-visible" href="#">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</span>
 			</div>
 		</footer>
 	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
 	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	<script src="src/js/main.js"></script>
 	<script src="src/js/typing.js"></script>
 </body>

@@ -1,8 +1,4 @@
-var phrases = [
-  "Tokenomics Feedback",
-  "Beta Testing",
-  "Pre - ICO Market Research",
-];
+var phrases = ["Tokenomics Feedback", "Beta Testing", "Pre - ICO Research"];
 
 var currentPhraseIndex = 0;
 var currentPhrase = phrases[currentPhraseIndex];
@@ -52,3 +48,13 @@ function getRandomChar() {
 }
 
 startTypewriterEffect();
+
+/*$(".featured-container").slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  prevArrow: $(".prev"),
+  nextArrow: $(".next"),
+});
+*/

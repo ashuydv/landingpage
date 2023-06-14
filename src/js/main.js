@@ -264,11 +264,11 @@ var fullAnimation = (function () {
   const slideCards = document.querySelectorAll(".slide-card");
   const bars = document.querySelectorAll(".bar");
   const images = [
-    "https://cdn.shopify.com/s/files/1/0611/9273/2728/files/illustration-blockchain-components.png",
-    "https://cdn.shopify.com/s/files/1/0611/9273/2728/files/shopify-payments_805f53f7-21cf-43d4-8fe9-4c3c00ed99e1.png?v=1684752233",
-    "https://cdn.shopify.com/s/files/1/0611/9273/2728/files/illustration-gates-api.png?v=1675285927",
-    "http://dummyimage.com/600x400/000/fff",
-    "http://dummyimage.com/601x400/000/fff",
+    "https://res.cloudinary.com/djl8mcf2u/image/upload/v1686730570/1_w1u9vj.png",
+    "https://res.cloudinary.com/djl8mcf2u/image/upload/v1686730570/2_s1zekp.png",
+    "https://res.cloudinary.com/djl8mcf2u/image/upload/v1686730570/3_e7rsin.png",
+    "https://res.cloudinary.com/djl8mcf2u/image/upload/v1686730570/4_disukm.png",
+    "https://res.cloudinary.com/djl8mcf2u/image/upload/v1686730570/5_leeqve.png",
   ];
   const imageSection = document.querySelector(".image-section");
 
@@ -295,6 +295,7 @@ var fullAnimation = (function () {
     });
   });
 
+  // blog slider
   return {
     init: init,
   };
